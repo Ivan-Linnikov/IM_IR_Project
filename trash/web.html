@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Code Reading Experiment</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        line-height: 1.5;
+    }
+    .hidden {
+        display: none;
+    }
+    .center {
+        text-align: center;
+    }
+    .button-container {
+        margin-top: 20px;
+    }
+    button {
+        padding: 10px 20px;
+        background: #333;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+    button:hover {
+        background: #555;
+    }
+    .identifiers-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .identifier-option {
+        margin: 5px 0;
+        cursor: pointer;
+        padding: 5px;
+        border: 1px solid #ccc;
+        width: fit-content;
+    }
+    .identifier-option:hover {
+        background: #f0f0f0;
+    }
+</style>
+</head>
+<body>
+
+<!-- Welcome Page -->
+<div id="welcome-page">
+    <h1>Code Reading Experiment</h1>
+    <p>Welcome to our experiment. The goal is to investigate if using a specific separator in identifiers (like camelCase or kebab-case) affects code reading speed. You will be shown a short sentence and then multiple identifiers, one of which represents that sentence in a given style. Your task is to click on the identifier that matches the given sentence as quickly and accurately as possible.</p>
+    <p>Please read the instructions carefully and then proceed to the demographics form. After completing the form, the experiment will begin.</p>
+    <div class="button-container">
+        <button id="start-demo-btn">Continue to Demographics</button>
+    </div>
+</div>
+
+<!-- Demographics Page -->
+<div id="demographics-page" class="hidden">
+    <h2>Demographics</h2>
+    <form id="demo-form">
+        <label>Age: <input type="number" name="age" required></label><br><br>
+        <label>Years of programming experience: <input type="number" name="experience" required></label><br><br>
+        <label>Primary Programming Language: <input type="text" name="language" required></label><br><br>
+        <div class="button-container">
+            <button id="start-experiment-btn" type="submit">Start Experiment</button>
+        </div>
+    </form>
+</div>
+
+<!-- Experiment Page -->
+<div id="experiment-page" class="hidden">
+    <h2>Task</h2>
+    <p id="sentence-display"></p>
+    <div id="identifiers" class="identifiers-container"></div>
+    <p id="progress"></p>
+</div>
+
+<!-- Completion Page -->
+<div id="completion-page" class="hidden">
+    <h2>Experiment Completed</h2>
+    <p>Thank you for participating! Below is the CSV of your responses. Please copy it or save it as needed.</p>
+    <textarea id="results-csv" rows="10" cols="50"></textarea>
+</div>
+
+<script>
+// ==================== CONFIGURATION ====================
+
+// We define a set of tasks. Each task will display a sentence (like "move south")
+// and we have to show multiple identifiers. One correct identifier (in either camelCase or kebab-case)
+// and several distractors.
+// Half of the tasks are camelCase, half kebab-case.
+// Each correct choice must match the given sentence.
+//
+// Example sentence: "move south"
+// camelCase: "moveSouth"
+// kebab-case: "move-south"
+//
+// We will track the start time when we show the identifiers and measure how long the participant takes.
+// Also track whether the participant was correct.
+//
+// For simplicity, we hardcode a few tasks. In a real scenario, these could be dynamically generated.
+//
+// We'll do 4 tasks: 2 camelCase and 2 kebab-case
+// Sentence: "move south"
+// Correct camelCase: moveSouth
+// Correct kebab-case: move-south
+// Distractors: ["move-source", "more-south", "mover-sound", ...]
+//
+// Another sentence: "open file"
+// camelCase: openFile
+// kebab-case: open-file
+//
+// Another sentence: "read input"
+// camelCase: readInput
+// kebab-case: read-input
+//
+// Another sentence: "delete line"
+// camelCase: deleteLine
+// kebab-case: delete-line
+//
+// We'll randomize the order of tasks.
+
+const tasksData = [
+    {sentence: "move south", camelCase: "moveSouth", kebabCase: "move-south", distractors: ["move-source", "more-south", "mover-sound"]},
+    {sentence: "open file", camelCase: "openFile", kebabCase: "open-file", distractors: ["open-fix", "open-flip", "opener-file"]},
+    {sentence: "read input", camelCase: "readInput", kebabCase: "read-input", distractors: ["read-imply", "red-input", "reader-input"]},
+    {sentence: "delete line", camelCase: "deleteLine", kebabCase: "delete-line", distractors: ["delete-link", "deletor-line", "deline"]},
+];
+
+// Assign half to camelCase and half to kebabCase
+// We have 4 tasks, 2 camelCase and 2 kebabCase.
+const styles = ["camelCase", "kebabCase"];
+let assignedTasks = [];
+const half = tasksData.length / 2;
+const shuffledTasks = tasksData.sort(() => Math.random() - 0.5);
+let styleAssignment = [];
+for (let i = 0; i < tasksData.length; i++) {
+    styleAssignment.push(i < half ? "camelCase" : "kebabCase");
+}
+styleAssignment = styleAssignment.sort(() => Math.random() - 0.5); // randomize which tasks get which style
+
+for (let i = 0; i < tasksData.length; i++) {
+    assignedTasks.push({
+        sentence: shuffledTasks[i].sentence,
+        style: styleAssignment[i],
+        correct: shuffledTasks[i][styleAssignment[i]],
+        distractors: shuffledTasks[i].distractors
+    });
+}
+
+// ==================== DOM ELEMENTS ====================
+
+const welcomePage = document.getElementById('welcome-page');
+const demographicsPage = document.getElementById('demographics-page');
+const experimentPage = document.getElementById('experiment-page');
+const completionPage = document.getElementById('completion-page');
+
+const startDemoBtn = document.getElementById('start-demo-btn');
+const demoForm = document.getElementById('demo-form');
+const startExpBtn = document.getElementById('start-experiment-btn');
+
+const sentenceDisplay = document.getElementById('sentence-display');
+const identifiersContainer = document.getElementById('identifiers');
+const progressDisplay = document.getElementById('progress');
+const resultsCSV = document.getElementById('results-csv');
+
+// ==================== STATE MANAGEMENT ====================
+let currentTaskIndex = 0;
+let results = [];
+let startTime = 0;
+let demographics = {};
+
+// ==================== EVENT HANDLERS ====================
+
+startDemoBtn.addEventListener('click', () => {
+    welcomePage.classList.add('hidden');
+    demographicsPage.classList.remove('hidden');
+});
+
+demoForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const formData = new FormData(demoForm);
+    demographics.age = formData.get('age');
+    demographics.experience = formData.get('experience');
+    demographics.language = formData.get('language');
+
+    demographicsPage.classList.add('hidden');
+    experimentPage.classList.remove('hidden');
+
+    startTask();
+});
+
+function startTask() {
+    if (currentTaskIndex >= assignedTasks.length) {
+        finishExperiment();
+        return;
+    }
+
+    const task = assignedTasks[currentTaskIndex];
+
+    // Show sentence
+    sentenceDisplay.textContent = `Find the identifier that represents: "${task.sentence}"`;
+    
+    // Clear previous identifiers
+    identifiersContainer.innerHTML = '';
+
+    // Construct identifier set: correct + distractors
+    let options = [task.correct, ...task.distractors];
+    options = shuffleArray(options);
+
+    options.forEach(opt => {
+        const div = document.createElement('div');
+        div.classList.add('identifier-option');
+        div.textContent = opt;
+        div.addEventListener('click', () => onIdentifierClick(opt));
+        identifiersContainer.appendChild(div);
+    });
+
+    progressDisplay.textContent = `Task ${currentTaskIndex+1} of ${assignedTasks.length}`;
+
+    startTime = performance.now();
+}
+
+function onIdentifierClick(chosen) {
+    const endTime = performance.now();
+    const task = assignedTasks[currentTaskIndex];
+    const correct = (chosen === task.correct);
+    const timeTaken = endTime - startTime; // in ms
+
+    results.push({
+        sentence: task.sentence,
+        style: task.style,
+        correctIdentifier: task.correct,
+        chosenIdentifier: chosen,
+        correct: correct,
+        timeTaken: timeTaken,
+        age: demographics.age,
+        experience: demographics.experience,
+        language: demographics.language
+    });
+
+    currentTaskIndex++;
+    startTask();
+}
+
+function finishExperiment() {
+    experimentPage.classList.add('hidden');
+    completionPage.classList.remove('hidden');
+
+    // Generate CSV
+    const header = ["sentence","style","correctIdentifier","chosenIdentifier","correct","timeTaken","age","experience","language"];
+    const lines = [header.join(",")];
+    results.forEach(r => {
+        lines.push([
+            r.sentence,
+            r.style,
+            r.correctIdentifier,
+            r.chosenIdentifier,
+            r.correct,
+            r.timeTaken,
+            r.age,
+            r.experience,
+            r.language
+        ].join(","));
+    });
+
+    resultsCSV.value = lines.join("\n");
+}
+
+// Utility function
+function shuffleArray(array) {
+    const arr = array.slice();
+    for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i+1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+}
+</script>
+
+<p><i>Yamete kudasai</i></p>
+</body>
+</html>

@@ -1,0 +1,419 @@
+[
+    {
+        "Name": "Be Different Hairstyle",
+        "Address": "Via Beltramina 8, 6900 Lugano",
+        "Mobile": "079 847 00 04",
+        "Email": "salonebedifferent@gmail.com",
+        "Categories": [
+            "Hairdresser",
+            "Cosmetic institute",
+            "Hair extensions",
+            "Barbershop",
+            "Wedding",
+            "Make-up",
+            "Mask designers"
+        ],
+        "Opening Times": {
+            "Monday *": "9:00-\n to \n18:00",
+            "Tuesday": "9:00-\n to \n18:30",
+            "Wednesday": "9:00-\n to \n18:30",
+            "Thursday": "9:00-\n to \n21:00",
+            "Friday": "9:00-\n to \n18:30",
+            "Saturday": "8:30-\n to \n16:00",
+            "Sunday": "Closed",
+            "": ""
+        }
+    },
+    {
+        "Name": "Team Laura Compagnia Della Bellezza Parrucchieri",
+        "Address": "Via Cattedrale 4, 6900 Lugano",
+        "Mobile": "091 923 49 59",
+        "Email": "",
+        "Categories": [
+            "Hairdresser",
+            "Hairdressing equipment",
+            "Hairdresser supply",
+            "Hairdresser aesthetics home service",
+            "Hairdressing school"
+        ],
+        "Opening Times": {
+            "Monday": "Closed",
+            "Tuesday": "8:30-\n to \n18:30",
+            "Wednesday": "8:30-\n to \n18:30",
+            "Thursday": "8:30-\n to \n18:30",
+            "Friday": "8:30-\n to \n18:30",
+            "Saturday": "8:30-\n to \n18:30",
+            "Sunday": "Closed",
+            "": ""
+        }
+    },
+    {
+        "Name": "Salone Metamorphosis",
+        "Address": "Via Carlo Frasca 10, 6900 Lugano",
+        "Mobile": "076 244 17 77",
+        "Email": "metamorphosism.c81@gmail.com",
+        "Categories": [
+            "Hairdresser",
+            "Nail cosmetics",
+            "Foot care pedicures",
+            "Manicure",
+            "Beauty center"
+        ],
+        "Opening Times": {
+            "Monday": "Closed",
+            "Tuesday *": "9:00-\n to \n18:30",
+            "Wednesday *": "9:00-\n to \n18:30",
+            "Thursday *": "9:00-\n to \n18:30",
+            "Friday *": "9:00-\n to \n18:30",
+            "Saturday *": "8:30-\n to \n17:00",
+            "Sunday": "Closed",
+            "": ""
+        }
+    },
+    {
+        "Name": "Walter Hair Design - Salone Walter SA",
+        "Address": "Autosilo, Via Serafino Balestra 4, 6900 Lugano",
+        "Mobile": "091 922 09 02",
+        "Email": "info@walterhairdesign.ch",
+        "Categories": [
+            "Hairdresser",
+            "Hair extensions",
+            "Wigs",
+            "Make-up artists",
+            "Wedding"
+        ],
+        "Opening Times": {
+            "Monday": "8:00-\n to \n18:30",
+            "Tuesday": "8:00-\n to \n18:30",
+            "Wednesday": "8:00-\n to \n18:30",
+            "Thursday": "8:00-\n to \n20:00",
+            "Friday": "8:00-\n to \n18:30",
+            "Saturday": "8:00-\n to \n17:00",
+            "Sunday": "Closed",
+            "": ""
+        }
+    },
+    {
+        "Name": "Boudoir Sagl",
+        "Address": "Via Geretta 11, 6900 Paradiso",
+        "Mobile": "091 980 37 18",
+        "Email": "",
+        "Categories": [
+            "Hairdresser",
+            "Makeovers",
+            "Nail cosmetics"
+        ],
+        "Opening Times": {
+            "Monday": "12:00-\n to \n18:00",
+            "Tuesday": "9:00-\n to \n18:00",
+            "Wednesday": "9:00-\n to \n18:00",
+            "Thursday": "12:00-\n to \n19:30",
+            "Friday": "9:00-\n to \n18:00",
+            "Saturday": "9:00-\n to \n14:30",
+            "Sunday": "Closed",
+            "": ""
+        }
+    },
+    {
+        "Name": "MAGAMO Beauty Lab",
+        "Address": "Corso Pestalozzi 3, 6900 Lugano",
+        "Mobile": "091 924 20 30",
+        "Email": "magamolugano@gmail.com",
+        "Categories": [
+            "Hairdresser",
+            "Cosmetic institute",
+            "Nail cosmetics",
+            "Manicure",
+            "Barbershop"
+        ],
+        "Opening Times": {
+            "Monday": "9:00-\n to \n17:00",
+            "Tuesday": "9:00-\n to \n19:00",
+            "Wednesday": "9:00-\n to \n19:00",
+            "Thursday": "9:00-\n to \n19:00",
+            "Friday": "9:00-\n to \n19:00",
+            "Saturday": "9:00-\n to \n18:00",
+            "Sunday": "Closed",
+            "": ""
+        }
+    },
+    {
+        "Name": "Hairstyling Nora",
+        "Address": "Via Giovanni Maraini 2, 6963 Pregassona",
+        "Mobile": "091 941 07 14",
+        "Email": "hairstyling.nora@gmail.com",
+        "Categories": [
+            "Hairdresser"
+        ],
+        "Opening Times": {
+            "Monday": "Closed",
+            "Tuesday": "9:00-\n to \n18:30",
+            "Wednesday": "9:00-\n to \n18:30",
+            "Thursday": "9:00-\n to \n18:30",
+            "Friday": "9:00-\n to \n18:30",
+            "Saturday": "8:30-\n to \n17:00",
+            "Sunday": "Closed",
+            "": ""
+        }
+    },
+    {
+        "Name": "FRANCOIFFEUR",
+        "Address": "Via Pessina 9, 6900 Lugano",
+        "Mobile": "091 923 49 16",
+        "Email": "francocoiffeur@gmail.it",
+        "Categories": [
+            "Hairdresser",
+            "Hair extensions"
+        ],
+        "Opening Times": {
+            "Monday": "8:30-\n to \n18:30",
+            "Tuesday": "8:30-\n to \n18:30",
+            "Wednesday": "8:30-\n to \n18:30",
+            "Thursday": "8:30-\n to \n18:30",
+            "Friday": "8:30-\n to \n18:30",
+            "Saturday": "8:30-\n to \n18:30",
+            "Sunday": "Closed",
+            "": ""
+        }
+    },
+    {
+        "Name": "SALONE MANUELA",
+        "Address": "Via Carlo Frasca 1, 6900 Lugano",
+        "Mobile": "076 377 39 95",
+        "Email": "",
+        "Categories": [
+            "Hairdresser",
+            "Hair extensions",
+            "Wigs",
+            "Hairdressing school",
+            "Hairdresser supply"
+        ],
+        "Opening Times": {
+            "Monday": "Closed",
+            "Tuesday *": "8:00-\n to \n18:00",
+            "Wednesday *": "8:00-\n to \n18:00",
+            "Thursday *": "8:00-\n to \n18:00",
+            "Friday *": "8:00-\n to \n18:00",
+            "Saturday *": "8:00-\n to \n18:00",
+            "Sunday": "Closed",
+            "": ""
+        }
+    },
+    {
+        "Name": "La ColorHouse Hair Salon",
+        "Address": "Via la Santa 17, 6962 Viganello",
+        "Mobile": "091 229 20 35",
+        "Email": "acerboni.lavoro@gmail.com",
+        "Categories": [
+            "Hairdresser",
+            "Hair extensions"
+        ],
+        "Opening Times": {
+            "Monday": "Closed",
+            "Tuesday": "13:00-\n to \n21:00",
+            "Wednesday": "9:00-\n to \n18:00",
+            "Thursday": "9:00-\n to \n18:00",
+            "Friday": "9:00-\n to \n18:00",
+            "Saturday": "9:00-\n to \n17:00",
+            "Sunday": "Closed",
+            "": ""
+        }
+    },
+    {
+        "Name": "Gio il Parrucchiere Sagl",
+        "Address": "Via Giuseppe Motta 1, 6900 Lugano",
+        "Mobile": "076 459 25 26",
+        "Email": "gioilparrucchiere22@gmail.com",
+        "Categories": [
+            "Hairdresser",
+            "Hairdresser aesthetics home service"
+        ],
+        "Opening Times": {
+            "Opening Hours": "Missing"
+        }
+    },
+    {
+        "Name": "RIXOS BARBER SHOP",
+        "Address": "Via Carlo Maderno 24, 6900 Lugano",
+        "Mobile": "078 238 28 88",
+        "Email": "rixosbarbershop@gmail.com",
+        "Categories": [
+            "Barbershop",
+            "Hairdresser"
+        ],
+        "Opening Times": {
+            "Monday": "Closed",
+            "Tuesday": "9:00-\n to \n19:00",
+            "Wednesday": "9:00-\n to \n19:00",
+            "Thursday": "9:00-\n to \n19:00",
+            "Friday": "9:00-\n to \n19:00",
+            "Saturday": "9:00-\n to \n19:00",
+            "Sunday": "Closed",
+            "": ""
+        }
+    },
+    {
+        "Name": "Sungates & Elixir - Extension Lugano",
+        "Address": "Via Orti 8, 6900 Lugano",
+        "Mobile": "077 964 57 25",
+        "Email": "",
+        "Categories": [
+            "Hairdresser",
+            "Hairdresser supply",
+            "Hairdresser aesthetics home service",
+            "Hair extensions",
+            "Hair institute"
+        ],
+        "Opening Times": {
+            "Monday *": "Open all day",
+            "Tuesday": "9:30-\n to \n19:00",
+            "Wednesday": "9:30-\n to \n19:00",
+            "Thursday": "11:00-\n to \n21:00",
+            "Friday": "9:30-\n to \n19:00",
+            "Saturday": "9:30-\n to \n19:00",
+            "Sunday": "Closed",
+            "": ""
+        }
+    },
+    {
+        "Name": "Salone by Franco",
+        "Address": "Via Luigi Taddei 1, 6962 Viganello",
+        "Mobile": "091 971 50 33",
+        "Email": "",
+        "Categories": [
+            "Hairdresser",
+            "Barbershop",
+            "Laser",
+            "Waxing"
+        ],
+        "Opening Times": {
+            "Monday": "Closed",
+            "Tuesday": "8:15-\n to \n18:30",
+            "Wednesday": "8:15-\n to \n18:30",
+            "Thursday": "8:15-\n to \n18:30",
+            "Friday": "8:15-\n to \n18:30",
+            "Saturday": "8:00-\n to \n17:00",
+            "Sunday": "Closed",
+            "": ""
+        }
+    },
+    {
+        "Name": "Salone On Hair",
+        "Address": "Via alla Roggia 9, 6962 Viganello",
+        "Mobile": "079 510 54 72",
+        "Email": "saloneonhair.rpb@gmail.com",
+        "Categories": [
+            "Hairdresser",
+            "Cosmetic institute",
+            "Makeovers"
+        ],
+        "Opening Times": {
+            "Monday": "Closed",
+            "Tuesday": "9:00-\n to \n12:00 / 13:30-\n to \n19:00",
+            "Wednesday": "9:00-\n to \n12:00 / 13:30-\n to \n19:00",
+            "Thursday": "9:00-\n to \n12:00 / 13:30-\n to \n19:00",
+            "Friday": "9:00-\n to \n12:00 / 13:30-\n to \n19:00",
+            "Saturday": "10:00-\n to \n16:00",
+            "Sunday": "Closed",
+            "": ""
+        }
+    },
+    {
+        "Name": "Mauri Concept",
+        "Address": "Via Gerolamo Vegezzi 4, 6900 Lugano",
+        "Mobile": "091 923 45 70",
+        "Email": "info@mauriconcept.ch",
+        "Categories": [
+            "Hairdresser",
+            "Cosmetic institute",
+            "Restaurant",
+            "Gifts",
+            "Aesthetic medicine",
+            "Alternative medicine",
+            "Beauty center"
+        ],
+        "Opening Times": {
+            "Monday": "7:00-\n to \n20:00",
+            "Tuesday": "7:00-\n to \n20:00",
+            "Wednesday": "7:00-\n to \n21:00",
+            "Thursday": "7:00-\n to \n21:00",
+            "Friday": "7:00-\n to \n21:00",
+            "Saturday": "7:30-\n to \n21:00",
+            "Sunday": "9:00-\n to \n17:00",
+            "": ""
+        }
+    },
+    {
+        "Name": "Gambino Barber Shop",
+        "Address": "Via Giovan Battista Pioda 8, 6900 Lugano",
+        "Mobile": "091 923 98 53",
+        "Email": "",
+        "Categories": [
+            "Barbershop",
+            "Hairdresser"
+        ],
+        "Opening Times": {
+            "Monday": "Closed",
+            "Tuesday": "8:00-\n to \n18:30",
+            "Wednesday": "8:00-\n to \n18:30",
+            "Thursday": "8:00-\n to \n18:30",
+            "Friday": "8:00-\n to \n18:30",
+            "Saturday": "8:00-\n to \n17:00",
+            "Sunday": "Closed",
+            "": ""
+        }
+    },
+    {
+        "Name": "Salone Liliana",
+        "Address": "Via Rinaldo Simen 8, 6900 Lugano",
+        "Mobile": "091 235 55 08",
+        "Email": "salonelilianalugano@gmail.com",
+        "Categories": [
+            "Hairdresser",
+            "Hair extensions",
+            "Barbershop"
+        ],
+        "Opening Times": {
+            "Monday": "Closed",
+            "Tuesday *": "9:00-\n to \n18:00",
+            "Wednesday *": "9:00-\n to \n18:00",
+            "Thursday *": "9:00-\n to \n19:00",
+            "Friday *": "9:00-\n to \n18:00",
+            "Saturday *": "9:00-\n to \n16:00",
+            "Sunday": "Closed",
+            "": ""
+        }
+    },
+    {
+        "Name": "Etrebel Lugano - Acconciatura Estetica avanzata",
+        "Address": "Piazza Alighieri Dante 8, 6900 Lugano",
+        "Mobile": "091 220 73 56",
+        "Email": "lugano@etrebel.it",
+        "Categories": [
+            "Cosmetic institute",
+            "Hairdresser"
+        ],
+        "Opening Times": {
+            "Monday": "Closed",
+            "Tuesday": "9:30-\n to \n19:00",
+            "Wednesday": "9:30-\n to \n19:00",
+            "Thursday": "9:30-\n to \n19:00",
+            "Friday": "12:30-\n to \n20:00",
+            "Saturday": "9:00-\n to \n17:30",
+            "Sunday": "Closed",
+            "": ""
+        }
+    },
+    {
+        "Name": "Coiffure Chez Chiara",
+        "Address": "Via alla Bozzoreda 37, 6963 Pregassona",
+        "Mobile": "091 940 17 42",
+        "Email": "",
+        "Categories": [
+            "Missing"
+        ],
+        "Opening Times": {
+            "Opening Hours": "Missing"
+        }
+    }
+]

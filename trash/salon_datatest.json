@@ -1,0 +1,25 @@
+{
+    "Name": "N/A",
+    "Address": "",
+    "Mobile": "N/A",
+    "Email": "salonebedifferent@gmail.com",
+    "Categories": [
+        "Hairdresser",
+        "Cosmetic institute",
+        "Hair extensions",
+        "Barbershop",
+        "Wedding",
+        "Make-up",
+        "Mask designers"
+    ],
+    "Opening Times": {
+        "Monday *": "9:00-\n to \n18:00",
+        "Tuesday": "9:00-\n to \n18:30",
+        "Wednesday": "9:00-\n to \n18:30",
+        "Thursday": "9:00-\n to \n21:00",
+        "Friday": "9:00-\n to \n18:30",
+        "Saturday": "8:30-\n to \n16:00",
+        "Sunday": "Closed",
+        "": ""
+    }
+}

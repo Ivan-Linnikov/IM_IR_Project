@@ -35,6 +35,7 @@ except Exception as e:
 salon_names = []
 addresses = []
 closing_times = []
+contact_numbers = []
 
 # Scrape data
 page_number = 1
@@ -66,16 +67,32 @@ while True:
                 closing_time_elem = salon.find_element(By.XPATH, './/section[@data-testid="open-label"]')
                 closing_time = closing_time_elem.text if closing_time_elem else "N/A"
 
+                # First contact number
+                try:
+                    # Locate the "Other Contact Options" button and click it
+                    contact_button = salon.find_element(By.XPATH, './/button[@id="contact-item-toggle-button"]')
+                    contact_button.click()
+                    time.sleep(1)  # Allow the dropdown to expand
+
+                    # Extract the first contact number
+                    first_contact_elem = salon.find_element(By.XPATH, './/div[@role="option" and contains(@class, "list-box_menu_item_option")]')
+                    first_contact = first_contact_elem.text if first_contact_elem else "N/A"
+                except Exception as e:
+                    print(f"Error extracting contact number for salon {idx} on page {page_number}: {e}")
+                    first_contact = "N/A"
+
                 # Store data
                 salon_names.append(name)
                 addresses.append(address)
                 closing_times.append(closing_time)
+                contact_numbers.append(first_contact)
 
                 # Print the data for verification
                 print(f"Salon {idx} on page {page_number}:")
                 print(f"  Name: {name}")
                 print(f"  Address: {address}")
                 print(f"  Closing Time: {closing_time}")
+                print(f"  First Contact: {first_contact}")
             except Exception as e:
                 print(f"Error processing salon {idx} on page {page_number}: {e}")
 
@@ -110,7 +127,8 @@ csv_filename = "local_ch_hairdressers_lugano.csv"
 data = pd.DataFrame({
     "Salon Name": salon_names,
     "Address": addresses,
-    "Closing Time": closing_times
+    "Closing Time": closing_times,
+    "First Contact": contact_numbers
 })
 data.to_csv(csv_filename, index=False)
 print(f"Scraping complete. Data saved to {csv_filename}")
