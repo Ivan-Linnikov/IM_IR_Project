@@ -1,0 +1,566 @@
+[
+    {
+        "Name": "Fusspflege in Mauren Martina B\u00fcchel",
+        "Address": "B\u00f6nerstrasse 9, 9493 Mauren, Liechtenstein",
+        "Phone": "N/A",
+        "Email": "N/A",
+        "Categories": [
+            "Beauty salons",
+            "Manicures and pedicures",
+            "Day spa",
+            "Hairdressing and other beauty treatment"
+        ],
+        "Opening Times": {
+            "Monday": "N/A",
+            "Tuesday": "N/A",
+            "Wednesday": "N/A",
+            "Thursday": "N/A",
+            "Friday": "N/A",
+            "Saturday": "N/A",
+            "Sunday": "N/A"
+        }
+    },
+    {
+        "Name": "Coiffeur Klaudia",
+        "Address": "Schmiedgasse 3, 9492 Eschen, Liechtenstein",
+        "Phone": "+423 373 09 09",
+        "Email": "klaudia@coiffeurklaudia.li",
+        "Categories": [
+            "Hairdressing and other beauty treatment",
+            "Barbers",
+            "Beauty salons"
+        ],
+        "Opening Times": {
+            "Monday": "N/A",
+            "Tuesday": "08:30 - 18:30",
+            "Wednesday": "08:30 - 18:30",
+            "Thursday": "08:30 - 20:00",
+            "Friday": "08:30 - 18:30",
+            "Saturday": "08:00 - 13:00",
+            "Sunday": "N/A"
+        }
+    },
+    {
+        "Name": "Salon Mano Anstalt",
+        "Address": "Essanestrasse 43, 9492 Eschen, Liechtenstein",
+        "Phone": "+423 373 23 60",
+        "Email": "mail@salon-mano.li",
+        "Categories": [
+            "Beauty salons",
+            "Barbers",
+            "Hairdressing and other beauty treatment"
+        ],
+        "Opening Times": {
+            "Monday": "13:00 - 18:30",
+            "Tuesday": "08:00 - 18:30",
+            "Wednesday": "08:00 - 18:30",
+            "Thursday": "08:00 - 18:30",
+            "Friday": "08:00 - 19:30",
+            "Saturday": "07:30 - 14:00",
+            "Sunday": "N/A"
+        }
+    },
+    {
+        "Name": "Sie & Er Coiffure",
+        "Address": "St. Luzi-Strasse 7, 9492 Eschen, Liechtenstein",
+        "Phone": "+423 370 10 31",
+        "Email": "coiffure@intercoiffure.li",
+        "Categories": [
+            "Beauty salons",
+            "Hairdressing and other beauty treatment",
+            "Beauty aids"
+        ],
+        "Opening Times": {
+            "Monday": "N/A",
+            "Tuesday": "08:00 - 18:30",
+            "Wednesday": "08:00 - 18:30",
+            "Thursday": "08:00 - 18:30",
+            "Friday": "08:00 - 20:00",
+            "Saturday": "07:00 - 14:00",
+            "Sunday": "N/A"
+        }
+    },
+    {
+        "Name": "Coiffeursalon Studio Haarscharf",
+        "Address": "Hainweg 23, 9492 Eschen, Liechtenstein",
+        "Phone": "+423 373 55 50",
+        "Email": "N/A",
+        "Categories": [
+            "Beauty salons",
+            "Hairdressing and other beauty treatment"
+        ],
+        "Opening Times": {
+            "Monday": "N/A",
+            "Tuesday": "N/A",
+            "Wednesday": "N/A",
+            "Thursday": "N/A",
+            "Friday": "N/A",
+            "Saturday": "N/A",
+            "Sunday": "N/A"
+        }
+    },
+    {
+        "Name": "estilo libre Hair&Beauty Anstalt",
+        "Address": "Benderer Str. 18, 9494 Schaan, Liechtenstein",
+        "Phone": "+423 232 35 35",
+        "Email": "N/A",
+        "Categories": [
+            "Hairdressing and other beauty treatment",
+            "Beauty salons"
+        ],
+        "Opening Times": {
+            "Monday": "N/A",
+            "Tuesday": "09:00 - 18:30",
+            "Wednesday": "09:00 - 18:30",
+            "Thursday": "09:00 - 18:30",
+            "Friday": "09:00 - 19:00",
+            "Saturday": "08:30 - 14:00",
+            "Sunday": "N/A"
+        }
+    },
+    {
+        "Name": "Tona-Hairstyle",
+        "Address": "Landstrasse 92, 9495 Triesen, Liechtenstein",
+        "Phone": "+423 392 55 05",
+        "Email": "infotonahairstyle@gmail.com",
+        "Categories": [
+            "Hairdressing and other beauty treatment",
+            "Barbers",
+            "Beauty salons"
+        ],
+        "Opening Times": {
+            "Monday": "N/A",
+            "Tuesday": "08:30 - 18:00",
+            "Wednesday": "08:30 - 18:00",
+            "Thursday": "08:30 - 18:00",
+            "Friday": "08:30 - 18:00",
+            "Saturday": "08:30 - 15:00",
+            "Sunday": "N/A"
+        }
+    },
+    {
+        "Name": "Salon Niedhart - Damen und Herren",
+        "Address": "Landstrasse 58, 9494 Schaan, Liechtenstein",
+        "Phone": "+423 232 13 86",
+        "Email": "info@salon-niedhart.li",
+        "Categories": [
+            "Hairdressing and other beauty treatment",
+            "Beauty salons"
+        ],
+        "Opening Times": {
+            "Monday": "N/A",
+            "Tuesday": "N/A",
+            "Wednesday": "N/A",
+            "Thursday": "N/A",
+            "Friday": "N/A",
+            "Saturday": "08:00 - 13:00",
+            "Sunday": "N/A"
+        }
+    },
+    {
+        "Name": "Salon Astrid",
+        "Address": "Zollstrasse 8, 9494 Schaan, Liechtenstein",
+        "Phone": "+423 232 03 19",
+        "Email": "N/A",
+        "Categories": [
+            "Beauty salons",
+            "Barbers",
+            "Hairdressing and other beauty treatment"
+        ],
+        "Opening Times": {
+            "Monday": "N/A",
+            "Tuesday": "N/A",
+            "Wednesday": "N/A",
+            "Thursday": "N/A",
+            "Friday": "N/A",
+            "Saturday": "08:00 - 14:00",
+            "Sunday": "N/A"
+        }
+    },
+    {
+        "Name": "Studio Haar-Kult Mauren",
+        "Address": "F\u00fcrst-Franz-Josefstrasse 2, 9493 Mauren, Liechtenstein",
+        "Phone": "+423 373 13 79",
+        "Email": "N/A",
+        "Categories": [
+            "Beauty salons",
+            "Hairdressing and other beauty treatment"
+        ],
+        "Opening Times": {
+            "Monday": "08:30 - 19:00",
+            "Tuesday": "08:30 - 19:00",
+            "Wednesday": "08:30 - 19:00",
+            "Thursday": "08:30 - 19:00",
+            "Friday": "08:30 - 19:00",
+            "Saturday": "08:00 - 14:00",
+            "Sunday": "N/A"
+        }
+    },
+    {
+        "Name": "Coiffeur Les Artistes",
+        "Address": "Peter-Kaiser-Strasse 2, 9493 Mauren, Liechtenstein",
+        "Phone": "+423 373 67 60",
+        "Email": "info@lesartistes.li",
+        "Categories": [
+            "Beauty aids",
+            "Hairdressing and other beauty treatment",
+            "Management consultancy activities",
+            "Beauty salons"
+        ],
+        "Opening Times": {
+            "Monday": "N/A",
+            "Tuesday": "N/A",
+            "Wednesday": "N/A",
+            "Thursday": "N/A",
+            "Friday": "N/A",
+            "Saturday": "07:00 - 14:00",
+            "Sunday": "N/A"
+        }
+    },
+    {
+        "Name": "Coiffure Stile Fabrizio Hairstylist & Haarkosmetik",
+        "Address": "Heiligkreuz 17, 9490 Vaduz, Liechtenstein",
+        "Phone": "+423 230 26 26",
+        "Email": "info@coiffure-fabrizio.li",
+        "Categories": [
+            "Beauty salons",
+            "Hairdressing and other beauty treatment"
+        ],
+        "Opening Times": {
+            "Monday": "N/A",
+            "Tuesday": "08:00 - 18:30",
+            "Wednesday": "08:00 - 18:30",
+            "Thursday": "08:00 - 18:30",
+            "Friday": "08:00 - 18:30",
+            "Saturday": "08:00 - 15:00",
+            "Sunday": "N/A"
+        }
+    },
+    {
+        "Name": "GIDOR Coiffure (Vaduz)",
+        "Address": "Landstrasse 117, 9490 Vaduz, Liechtenstein",
+        "Phone": "+423 231 40 04",
+        "Email": "N/A",
+        "Categories": [
+            "Barbers",
+            "Management consultancy activities",
+            "Beauty salons",
+            "Beauty aids",
+            "Hairdressing and other beauty treatment"
+        ],
+        "Opening Times": {
+            "Monday": "09:00 - 19:00",
+            "Tuesday": "09:00 - 19:00",
+            "Wednesday": "09:00 - 19:00",
+            "Thursday": "09:00 - 19:00",
+            "Friday": "09:00 - 19:00",
+            "Saturday": "08:00 - 17:00",
+            "Sunday": "N/A"
+        }
+    },
+    {
+        "Name": "A. Kerhart, Coiffeur Headroom",
+        "Address": "Poststrasse 15, 9494 Schaan, Liechtenstein",
+        "Phone": "+423 230 03 23",
+        "Email": "N/A",
+        "Categories": [
+            "Hairdressing and other beauty treatment",
+            "Beauty salons"
+        ],
+        "Opening Times": {
+            "Monday": "N/A",
+            "Tuesday": "09:00 - 18:00",
+            "Wednesday": "09:00 - 18:00",
+            "Thursday": "09:00 - 18:00",
+            "Friday": "09:00 - 18:00",
+            "Saturday": "08:00 - 13:00",
+            "Sunday": "N/A"
+        }
+    },
+    {
+        "Name": "haarlocke - Frisuren & mehr.",
+        "Address": "Lavadinastrasse 85, 9497 Triesenberg, Liechtenstein",
+        "Phone": "+423 791 06 30",
+        "Email": "N/A",
+        "Categories": [
+            "Hairdressing and other beauty treatment",
+            "Barbers"
+        ],
+        "Opening Times": {
+            "Monday": "09:00 - 20:00",
+            "Tuesday": "09:00 - 20:00",
+            "Wednesday": "09:00 - 20:00",
+            "Thursday": "09:00 - 20:00",
+            "Friday": "09:00 - 20:00",
+            "Saturday": "N/A",
+            "Sunday": "N/A"
+        }
+    },
+    {
+        "Name": "Top Hair",
+        "Address": "W\u00fcerleweg 5, 9491 Ruggell, Liechtenstein",
+        "Phone": "+423 373 66 66",
+        "Email": "N/A",
+        "Categories": [
+            "Hairdressing and other beauty treatment",
+            "Pharmacies and drug stores",
+            "Retail trade, except of motor vehicles and motorcycles",
+            "Beauty salons"
+        ],
+        "Opening Times": {
+            "Monday": "N/A",
+            "Tuesday": "08:00 - 17:00",
+            "Wednesday": "N/A",
+            "Thursday": "08:00 - 17:00",
+            "Friday": "N/A",
+            "Saturday": "N/A",
+            "Sunday": "N/A"
+        }
+    },
+    {
+        "Name": "Secrets of Beauty Est.",
+        "Address": "Eschner Strasse 51, 9487 Gamprin, Liechtenstein",
+        "Phone": "+423 373 94 91",
+        "Email": "info@sob.li",
+        "Categories": [
+            "Pharmacies and drug stores",
+            "Medical clinic",
+            "Beauty salons",
+            "Hairdressing and other beauty treatment",
+            "Day spa"
+        ],
+        "Opening Times": {
+            "Monday": "09:30 - 18:30",
+            "Tuesday": "09:30 - 18:30",
+            "Wednesday": "09:30 - 18:30",
+            "Thursday": "09:30 - 18:30",
+            "Friday": "09:00 - 18:00",
+            "Saturday": "09:30 - 15:00",
+            "Sunday": "N/A"
+        }
+    },
+    {
+        "Name": "BIG Coiffeur",
+        "Address": "Landstrasse 121, 9495 Triesen, Liechtenstein",
+        "Phone": "+423 392 27 24",
+        "Email": "N/A",
+        "Categories": [
+            "Beauty salons",
+            "Hairdressing and other beauty treatment"
+        ],
+        "Opening Times": {
+            "Monday": "N/A",
+            "Tuesday": "08:00 - 18:30",
+            "Wednesday": "08:00 - 18:30",
+            "Thursday": "08:00 - 18:30",
+            "Friday": "08:00 - 18:30",
+            "Saturday": "08:00 - 11:00",
+            "Sunday": "N/A"
+        }
+    },
+    {
+        "Name": "Coiffeursalon Herrensalon Vincenzo",
+        "Address": "Herrengasse 1 A, 9490 Vaduz, Liechtenstein",
+        "Phone": "+423 232 45 26",
+        "Email": "N/A",
+        "Categories": [
+            "Hairdressing and other beauty treatment",
+            "Beauty salons"
+        ],
+        "Opening Times": {
+            "Monday": "N/A",
+            "Tuesday": "N/A",
+            "Wednesday": "N/A",
+            "Thursday": "N/A",
+            "Friday": "N/A",
+            "Saturday": "N/A",
+            "Sunday": "N/A"
+        }
+    },
+    {
+        "Name": "A. Kerhart, Coiffeur Headroom",
+        "Address": "Landstrasse 89, 9490 Vaduz, Liechtenstein",
+        "Phone": "+423 230 03 23",
+        "Email": "N/A",
+        "Categories": [
+            "Hairdressing and other beauty treatment",
+            "Beauty salons"
+        ],
+        "Opening Times": {
+            "Monday": "09:00 - 18:00",
+            "Tuesday": "09:00 - 18:00",
+            "Wednesday": "09:00 - 18:00",
+            "Thursday": "09:00 - 18:00",
+            "Friday": "09:00 - 18:00",
+            "Saturday": "08:00 - 13:00",
+            "Sunday": "N/A"
+        }
+    },
+    {
+        "Name": "H\u00e4\u00e4r \u00e4nd Sch\u00e4r",
+        "Address": "B\u00f6nerstrasse 87, 9493 Mauren FL, Liechtenstein",
+        "Phone": "+423 373 93 23",
+        "Email": "N/A",
+        "Categories": [
+            "Hairdressing and other beauty treatment",
+            "Beauty salons"
+        ],
+        "Opening Times": {
+            "Monday": "N/A",
+            "Tuesday": "N/A",
+            "Wednesday": "N/A",
+            "Thursday": "N/A",
+            "Friday": "N/A",
+            "Saturday": "N/A",
+            "Sunday": "N/A"
+        }
+    },
+    {
+        "Name": "Coiffeursalon EM",
+        "Address": "Grosser Bongert 20, 9495 Triesen, Liechtenstein",
+        "Phone": "+423 392 34 21",
+        "Email": "N/A",
+        "Categories": [
+            "Beauty salons",
+            "Hairdressing and other beauty treatment"
+        ],
+        "Opening Times": {
+            "Monday": "N/A",
+            "Tuesday": "N/A",
+            "Wednesday": "N/A",
+            "Thursday": "N/A",
+            "Friday": "N/A",
+            "Saturday": "N/A",
+            "Sunday": "N/A"
+        }
+    },
+    {
+        "Name": "Mrs. Beatrice W\u00fcst Fusspflegesalon",
+        "Address": "Kesse 31, 9488 Schellenberg, Liechtenstein",
+        "Phone": "+423 373 45 43",
+        "Email": "N/A",
+        "Categories": [
+            "Day spa",
+            "Beauty salons",
+            "Hairdressing and other beauty treatment",
+            "Manicures and pedicures"
+        ],
+        "Opening Times": {
+            "Monday": "N/A",
+            "Tuesday": "N/A",
+            "Wednesday": "N/A",
+            "Thursday": "N/A",
+            "Friday": "N/A",
+            "Saturday": "N/A",
+            "Sunday": "N/A"
+        }
+    },
+    {
+        "URL": "https://www.cybo.com/LI-biz/coiffeursalon-darte",
+        "Error": "Message: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=131.0.6778.140)\nStacktrace:\n0   chromedriver                        0x0000000104723af0 cxxbridge1$str$ptr + 3651580\n1   chromedriver                        0x000000010471c340 cxxbridge1$str$ptr + 3620940\n2   chromedriver                        0x00000001041844b4 cxxbridge1$string$len + 89224\n3   chromedriver                        0x000000010415f994 core::str::slice_error_fail::ha0e52dbcb60e6bae + 3780\n4   chromedriver                        0x00000001041ee890 cxxbridge1$string$len + 524388\n5   chromedriver                        0x000000010420176c cxxbridge1$string$len + 601920\n6   chromedriver                        0x00000001041bd0b0 cxxbridge1$string$len + 321668\n7   chromedriver                        0x00000001041bdd00 cxxbridge1$string$len + 324820\n8   chromedriver                        0x00000001046eee34 cxxbridge1$str$ptr + 3435328\n9   chromedriver                        0x00000001046f214c cxxbridge1$str$ptr + 3448408\n10  chromedriver                        0x00000001046d61a8 cxxbridge1$str$ptr + 3333812\n11  chromedriver                        0x00000001046f2a0c cxxbridge1$str$ptr + 3450648\n12  chromedriver                        0x00000001046c79b4 cxxbridge1$str$ptr + 3274432\n13  chromedriver                        0x000000010470d120 cxxbridge1$str$ptr + 3558956\n14  chromedriver                        0x000000010470d29c cxxbridge1$str$ptr + 3559336\n15  chromedriver                        0x000000010471bfb4 cxxbridge1$str$ptr + 3620032\n16  libsystem_pthread.dylib             0x00000001991a6f94 _pthread_start + 136\n17  libsystem_pthread.dylib             0x00000001991a1d34 thread_start + 8\n"
+    },
+    {
+        "URL": "https://www.cybo.com/LI-biz/coiffeursalon-m-gaube",
+        "Error": "Message: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=131.0.6778.140)\nStacktrace:\n0   chromedriver                        0x0000000104723af0 cxxbridge1$str$ptr + 3651580\n1   chromedriver                        0x000000010471c340 cxxbridge1$str$ptr + 3620940\n2   chromedriver                        0x00000001041844b4 cxxbridge1$string$len + 89224\n3   chromedriver                        0x000000010415f994 core::str::slice_error_fail::ha0e52dbcb60e6bae + 3780\n4   chromedriver                        0x00000001041ee890 cxxbridge1$string$len + 524388\n5   chromedriver                        0x000000010420176c cxxbridge1$string$len + 601920\n6   chromedriver                        0x00000001041bd0b0 cxxbridge1$string$len + 321668\n7   chromedriver                        0x00000001041bdd00 cxxbridge1$string$len + 324820\n8   chromedriver                        0x00000001046eee34 cxxbridge1$str$ptr + 3435328\n9   chromedriver                        0x00000001046f214c cxxbridge1$str$ptr + 3448408\n10  chromedriver                        0x00000001046d61a8 cxxbridge1$str$ptr + 3333812\n11  chromedriver                        0x00000001046f2a0c cxxbridge1$str$ptr + 3450648\n12  chromedriver                        0x00000001046c79b4 cxxbridge1$str$ptr + 3274432\n13  chromedriver                        0x000000010470d120 cxxbridge1$str$ptr + 3558956\n14  chromedriver                        0x000000010470d29c cxxbridge1$str$ptr + 3559336\n15  chromedriver                        0x000000010471bfb4 cxxbridge1$str$ptr + 3620032\n16  libsystem_pthread.dylib             0x00000001991a6f94 _pthread_start + 136\n17  libsystem_pthread.dylib             0x00000001991a1d34 thread_start + 8\n"
+    },
+    {
+        "URL": "https://www.cybo.com/LI-biz/coiffeursalon-fris%C3%B6r",
+        "Error": "Message: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=131.0.6778.140)\nStacktrace:\n0   chromedriver                        0x0000000104723af0 cxxbridge1$str$ptr + 3651580\n1   chromedriver                        0x000000010471c340 cxxbridge1$str$ptr + 3620940\n2   chromedriver                        0x00000001041844b4 cxxbridge1$string$len + 89224\n3   chromedriver                        0x000000010415f994 core::str::slice_error_fail::ha0e52dbcb60e6bae + 3780\n4   chromedriver                        0x00000001041ee890 cxxbridge1$string$len + 524388\n5   chromedriver                        0x000000010420176c cxxbridge1$string$len + 601920\n6   chromedriver                        0x00000001041bd0b0 cxxbridge1$string$len + 321668\n7   chromedriver                        0x00000001041bdd00 cxxbridge1$string$len + 324820\n8   chromedriver                        0x00000001046eee34 cxxbridge1$str$ptr + 3435328\n9   chromedriver                        0x00000001046f214c cxxbridge1$str$ptr + 3448408\n10  chromedriver                        0x00000001046d61a8 cxxbridge1$str$ptr + 3333812\n11  chromedriver                        0x00000001046f2a0c cxxbridge1$str$ptr + 3450648\n12  chromedriver                        0x00000001046c79b4 cxxbridge1$str$ptr + 3274432\n13  chromedriver                        0x000000010470d120 cxxbridge1$str$ptr + 3558956\n14  chromedriver                        0x000000010470d29c cxxbridge1$str$ptr + 3559336\n15  chromedriver                        0x000000010471bfb4 cxxbridge1$str$ptr + 3620032\n16  libsystem_pthread.dylib             0x00000001991a6f94 _pthread_start + 136\n17  libsystem_pthread.dylib             0x00000001991a1d34 thread_start + 8\n"
+    },
+    {
+        "URL": "https://www.cybo.com/LI-biz/coiffure-zur-schmiede",
+        "Error": "Message: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=131.0.6778.140)\nStacktrace:\n0   chromedriver                        0x0000000104723af0 cxxbridge1$str$ptr + 3651580\n1   chromedriver                        0x000000010471c340 cxxbridge1$str$ptr + 3620940\n2   chromedriver                        0x00000001041844b4 cxxbridge1$string$len + 89224\n3   chromedriver                        0x000000010415f994 core::str::slice_error_fail::ha0e52dbcb60e6bae + 3780\n4   chromedriver                        0x00000001041ee890 cxxbridge1$string$len + 524388\n5   chromedriver                        0x000000010420176c cxxbridge1$string$len + 601920\n6   chromedriver                        0x00000001041bd0b0 cxxbridge1$string$len + 321668\n7   chromedriver                        0x00000001041bdd00 cxxbridge1$string$len + 324820\n8   chromedriver                        0x00000001046eee34 cxxbridge1$str$ptr + 3435328\n9   chromedriver                        0x00000001046f214c cxxbridge1$str$ptr + 3448408\n10  chromedriver                        0x00000001046d61a8 cxxbridge1$str$ptr + 3333812\n11  chromedriver                        0x00000001046f2a0c cxxbridge1$str$ptr + 3450648\n12  chromedriver                        0x00000001046c79b4 cxxbridge1$str$ptr + 3274432\n13  chromedriver                        0x000000010470d120 cxxbridge1$str$ptr + 3558956\n14  chromedriver                        0x000000010470d29c cxxbridge1$str$ptr + 3559336\n15  chromedriver                        0x000000010471bfb4 cxxbridge1$str$ptr + 3620032\n16  libsystem_pthread.dylib             0x00000001991a6f94 _pthread_start + 136\n17  libsystem_pthread.dylib             0x00000001991a1d34 thread_start + 8\n"
+    },
+    {
+        "URL": "https://www.cybo.com/LI-biz/salon-liz",
+        "Error": "Message: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=131.0.6778.140)\nStacktrace:\n0   chromedriver                        0x0000000104723af0 cxxbridge1$str$ptr + 3651580\n1   chromedriver                        0x000000010471c340 cxxbridge1$str$ptr + 3620940\n2   chromedriver                        0x00000001041844b4 cxxbridge1$string$len + 89224\n3   chromedriver                        0x000000010415f994 core::str::slice_error_fail::ha0e52dbcb60e6bae + 3780\n4   chromedriver                        0x00000001041ee890 cxxbridge1$string$len + 524388\n5   chromedriver                        0x000000010420176c cxxbridge1$string$len + 601920\n6   chromedriver                        0x00000001041bd0b0 cxxbridge1$string$len + 321668\n7   chromedriver                        0x00000001041bdd00 cxxbridge1$string$len + 324820\n8   chromedriver                        0x00000001046eee34 cxxbridge1$str$ptr + 3435328\n9   chromedriver                        0x00000001046f214c cxxbridge1$str$ptr + 3448408\n10  chromedriver                        0x00000001046d61a8 cxxbridge1$str$ptr + 3333812\n11  chromedriver                        0x00000001046f2a0c cxxbridge1$str$ptr + 3450648\n12  chromedriver                        0x00000001046c79b4 cxxbridge1$str$ptr + 3274432\n13  chromedriver                        0x000000010470d120 cxxbridge1$str$ptr + 3558956\n14  chromedriver                        0x000000010470d29c cxxbridge1$str$ptr + 3559336\n15  chromedriver                        0x000000010471bfb4 cxxbridge1$str$ptr + 3620032\n16  libsystem_pthread.dylib             0x00000001991a6f94 _pthread_start + 136\n17  libsystem_pthread.dylib             0x00000001991a1d34 thread_start + 8\n"
+    },
+    {
+        "URL": "https://www.cybo.com/LI-biz/erikas-fusspflegepraxis",
+        "Error": "Message: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=131.0.6778.140)\nStacktrace:\n0   chromedriver                        0x0000000104723af0 cxxbridge1$str$ptr + 3651580\n1   chromedriver                        0x000000010471c340 cxxbridge1$str$ptr + 3620940\n2   chromedriver                        0x00000001041844b4 cxxbridge1$string$len + 89224\n3   chromedriver                        0x000000010415f994 core::str::slice_error_fail::ha0e52dbcb60e6bae + 3780\n4   chromedriver                        0x00000001041ee890 cxxbridge1$string$len + 524388\n5   chromedriver                        0x000000010420176c cxxbridge1$string$len + 601920\n6   chromedriver                        0x00000001041bd0b0 cxxbridge1$string$len + 321668\n7   chromedriver                        0x00000001041bdd00 cxxbridge1$string$len + 324820\n8   chromedriver                        0x00000001046eee34 cxxbridge1$str$ptr + 3435328\n9   chromedriver                        0x00000001046f214c cxxbridge1$str$ptr + 3448408\n10  chromedriver                        0x00000001046d61a8 cxxbridge1$str$ptr + 3333812\n11  chromedriver                        0x00000001046f2a0c cxxbridge1$str$ptr + 3450648\n12  chromedriver                        0x00000001046c79b4 cxxbridge1$str$ptr + 3274432\n13  chromedriver                        0x000000010470d120 cxxbridge1$str$ptr + 3558956\n14  chromedriver                        0x000000010470d29c cxxbridge1$str$ptr + 3559336\n15  chromedriver                        0x000000010471bfb4 cxxbridge1$str$ptr + 3620032\n16  libsystem_pthread.dylib             0x00000001991a6f94 _pthread_start + 136\n17  libsystem_pthread.dylib             0x00000001991a1d34 thread_start + 8\n"
+    },
+    {
+        "URL": "https://www.cybo.com/LI-biz/designerama-hair-sabrina-malin",
+        "Error": "Message: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=131.0.6778.140)\nStacktrace:\n0   chromedriver                        0x0000000104723af0 cxxbridge1$str$ptr + 3651580\n1   chromedriver                        0x000000010471c340 cxxbridge1$str$ptr + 3620940\n2   chromedriver                        0x00000001041844b4 cxxbridge1$string$len + 89224\n3   chromedriver                        0x000000010415f994 core::str::slice_error_fail::ha0e52dbcb60e6bae + 3780\n4   chromedriver                        0x00000001041ee890 cxxbridge1$string$len + 524388\n5   chromedriver                        0x000000010420176c cxxbridge1$string$len + 601920\n6   chromedriver                        0x00000001041bd0b0 cxxbridge1$string$len + 321668\n7   chromedriver                        0x00000001041bdd00 cxxbridge1$string$len + 324820\n8   chromedriver                        0x00000001046eee34 cxxbridge1$str$ptr + 3435328\n9   chromedriver                        0x00000001046f214c cxxbridge1$str$ptr + 3448408\n10  chromedriver                        0x00000001046d61a8 cxxbridge1$str$ptr + 3333812\n11  chromedriver                        0x00000001046f2a0c cxxbridge1$str$ptr + 3450648\n12  chromedriver                        0x00000001046c79b4 cxxbridge1$str$ptr + 3274432\n13  chromedriver                        0x000000010470d120 cxxbridge1$str$ptr + 3558956\n14  chromedriver                        0x000000010470d29c cxxbridge1$str$ptr + 3559336\n15  chromedriver                        0x000000010471bfb4 cxxbridge1$str$ptr + 3620032\n16  libsystem_pthread.dylib             0x00000001991a6f94 _pthread_start + 136\n17  libsystem_pthread.dylib             0x00000001991a1d34 thread_start + 8\n"
+    },
+    {
+        "URL": "https://www.cybo.com/LI-biz/pakos-barbershop",
+        "Error": "Message: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=131.0.6778.140)\nStacktrace:\n0   chromedriver                        0x0000000104723af0 cxxbridge1$str$ptr + 3651580\n1   chromedriver                        0x000000010471c340 cxxbridge1$str$ptr + 3620940\n2   chromedriver                        0x00000001041844b4 cxxbridge1$string$len + 89224\n3   chromedriver                        0x000000010415f994 core::str::slice_error_fail::ha0e52dbcb60e6bae + 3780\n4   chromedriver                        0x00000001041ee890 cxxbridge1$string$len + 524388\n5   chromedriver                        0x000000010420176c cxxbridge1$string$len + 601920\n6   chromedriver                        0x00000001041bd0b0 cxxbridge1$string$len + 321668\n7   chromedriver                        0x00000001041bdd00 cxxbridge1$string$len + 324820\n8   chromedriver                        0x00000001046eee34 cxxbridge1$str$ptr + 3435328\n9   chromedriver                        0x00000001046f214c cxxbridge1$str$ptr + 3448408\n10  chromedriver                        0x00000001046d61a8 cxxbridge1$str$ptr + 3333812\n11  chromedriver                        0x00000001046f2a0c cxxbridge1$str$ptr + 3450648\n12  chromedriver                        0x00000001046c79b4 cxxbridge1$str$ptr + 3274432\n13  chromedriver                        0x000000010470d120 cxxbridge1$str$ptr + 3558956\n14  chromedriver                        0x000000010470d29c cxxbridge1$str$ptr + 3559336\n15  chromedriver                        0x000000010471bfb4 cxxbridge1$str$ptr + 3620032\n16  libsystem_pthread.dylib             0x00000001991a6f94 _pthread_start + 136\n17  libsystem_pthread.dylib             0x00000001991a1d34 thread_start + 8\n"
+    },
+    {
+        "URL": "https://www.cybo.com/LI-biz/haarzentrum",
+        "Error": "Message: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=131.0.6778.140)\nStacktrace:\n0   chromedriver                        0x0000000104723af0 cxxbridge1$str$ptr + 3651580\n1   chromedriver                        0x000000010471c340 cxxbridge1$str$ptr + 3620940\n2   chromedriver                        0x00000001041844b4 cxxbridge1$string$len + 89224\n3   chromedriver                        0x000000010415f994 core::str::slice_error_fail::ha0e52dbcb60e6bae + 3780\n4   chromedriver                        0x00000001041ee890 cxxbridge1$string$len + 524388\n5   chromedriver                        0x000000010420176c cxxbridge1$string$len + 601920\n6   chromedriver                        0x00000001041bd0b0 cxxbridge1$string$len + 321668\n7   chromedriver                        0x00000001041bdd00 cxxbridge1$string$len + 324820\n8   chromedriver                        0x00000001046eee34 cxxbridge1$str$ptr + 3435328\n9   chromedriver                        0x00000001046f214c cxxbridge1$str$ptr + 3448408\n10  chromedriver                        0x00000001046d61a8 cxxbridge1$str$ptr + 3333812\n11  chromedriver                        0x00000001046f2a0c cxxbridge1$str$ptr + 3450648\n12  chromedriver                        0x00000001046c79b4 cxxbridge1$str$ptr + 3274432\n13  chromedriver                        0x000000010470d120 cxxbridge1$str$ptr + 3558956\n14  chromedriver                        0x000000010470d29c cxxbridge1$str$ptr + 3559336\n15  chromedriver                        0x000000010471bfb4 cxxbridge1$str$ptr + 3620032\n16  libsystem_pthread.dylib             0x00000001991a6f94 _pthread_start + 136\n17  libsystem_pthread.dylib             0x00000001991a1d34 thread_start + 8\n"
+    },
+    {
+        "URL": "https://www.cybo.com/LI-biz/coiffeur-zur-schmiede",
+        "Error": "Message: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=131.0.6778.140)\nStacktrace:\n0   chromedriver                        0x0000000104723af0 cxxbridge1$str$ptr + 3651580\n1   chromedriver                        0x000000010471c340 cxxbridge1$str$ptr + 3620940\n2   chromedriver                        0x00000001041844b4 cxxbridge1$string$len + 89224\n3   chromedriver                        0x000000010415f994 core::str::slice_error_fail::ha0e52dbcb60e6bae + 3780\n4   chromedriver                        0x00000001041ee890 cxxbridge1$string$len + 524388\n5   chromedriver                        0x000000010420176c cxxbridge1$string$len + 601920\n6   chromedriver                        0x00000001041bd0b0 cxxbridge1$string$len + 321668\n7   chromedriver                        0x00000001041bdd00 cxxbridge1$string$len + 324820\n8   chromedriver                        0x00000001046eee34 cxxbridge1$str$ptr + 3435328\n9   chromedriver                        0x00000001046f214c cxxbridge1$str$ptr + 3448408\n10  chromedriver                        0x00000001046d61a8 cxxbridge1$str$ptr + 3333812\n11  chromedriver                        0x00000001046f2a0c cxxbridge1$str$ptr + 3450648\n12  chromedriver                        0x00000001046c79b4 cxxbridge1$str$ptr + 3274432\n13  chromedriver                        0x000000010470d120 cxxbridge1$str$ptr + 3558956\n14  chromedriver                        0x000000010470d29c cxxbridge1$str$ptr + 3559336\n15  chromedriver                        0x000000010471bfb4 cxxbridge1$str$ptr + 3620032\n16  libsystem_pthread.dylib             0x00000001991a6f94 _pthread_start + 136\n17  libsystem_pthread.dylib             0x00000001991a1d34 thread_start + 8\n"
+    },
+    {
+        "URL": "https://www.cybo.com/LI-biz/coiffeur-magic_10",
+        "Error": "Message: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=131.0.6778.140)\nStacktrace:\n0   chromedriver                        0x0000000104723af0 cxxbridge1$str$ptr + 3651580\n1   chromedriver                        0x000000010471c340 cxxbridge1$str$ptr + 3620940\n2   chromedriver                        0x00000001041844b4 cxxbridge1$string$len + 89224\n3   chromedriver                        0x000000010415f994 core::str::slice_error_fail::ha0e52dbcb60e6bae + 3780\n4   chromedriver                        0x00000001041ee890 cxxbridge1$string$len + 524388\n5   chromedriver                        0x000000010420176c cxxbridge1$string$len + 601920\n6   chromedriver                        0x00000001041bd0b0 cxxbridge1$string$len + 321668\n7   chromedriver                        0x00000001041bdd00 cxxbridge1$string$len + 324820\n8   chromedriver                        0x00000001046eee34 cxxbridge1$str$ptr + 3435328\n9   chromedriver                        0x00000001046f214c cxxbridge1$str$ptr + 3448408\n10  chromedriver                        0x00000001046d61a8 cxxbridge1$str$ptr + 3333812\n11  chromedriver                        0x00000001046f2a0c cxxbridge1$str$ptr + 3450648\n12  chromedriver                        0x00000001046c79b4 cxxbridge1$str$ptr + 3274432\n13  chromedriver                        0x000000010470d120 cxxbridge1$str$ptr + 3558956\n14  chromedriver                        0x000000010470d29c cxxbridge1$str$ptr + 3559336\n15  chromedriver                        0x000000010471bfb4 cxxbridge1$str$ptr + 3620032\n16  libsystem_pthread.dylib             0x00000001991a6f94 _pthread_start + 136\n17  libsystem_pthread.dylib             0x00000001991a1d34 thread_start + 8\n"
+    },
+    {
+        "URL": "https://www.cybo.com/LI-biz/ruths-scherenzauber",
+        "Error": "Message: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=131.0.6778.140)\nStacktrace:\n0   chromedriver                        0x0000000104723af0 cxxbridge1$str$ptr + 3651580\n1   chromedriver                        0x000000010471c340 cxxbridge1$str$ptr + 3620940\n2   chromedriver                        0x00000001041844b4 cxxbridge1$string$len + 89224\n3   chromedriver                        0x000000010415f994 core::str::slice_error_fail::ha0e52dbcb60e6bae + 3780\n4   chromedriver                        0x00000001041ee890 cxxbridge1$string$len + 524388\n5   chromedriver                        0x000000010420176c cxxbridge1$string$len + 601920\n6   chromedriver                        0x00000001041bd0b0 cxxbridge1$string$len + 321668\n7   chromedriver                        0x00000001041bdd00 cxxbridge1$string$len + 324820\n8   chromedriver                        0x00000001046eee34 cxxbridge1$str$ptr + 3435328\n9   chromedriver                        0x00000001046f214c cxxbridge1$str$ptr + 3448408\n10  chromedriver                        0x00000001046d61a8 cxxbridge1$str$ptr + 3333812\n11  chromedriver                        0x00000001046f2a0c cxxbridge1$str$ptr + 3450648\n12  chromedriver                        0x00000001046c79b4 cxxbridge1$str$ptr + 3274432\n13  chromedriver                        0x000000010470d120 cxxbridge1$str$ptr + 3558956\n14  chromedriver                        0x000000010470d29c cxxbridge1$str$ptr + 3559336\n15  chromedriver                        0x000000010471bfb4 cxxbridge1$str$ptr + 3620032\n16  libsystem_pthread.dylib             0x00000001991a6f94 _pthread_start + 136\n17  libsystem_pthread.dylib             0x00000001991a1d34 thread_start + 8\n"
+    },
+    {
+        "URL": "https://www.cybo.com/LI-biz/skinminded-laser-clinics",
+        "Error": "Message: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=131.0.6778.140)\nStacktrace:\n0   chromedriver                        0x0000000104723af0 cxxbridge1$str$ptr + 3651580\n1   chromedriver                        0x000000010471c340 cxxbridge1$str$ptr + 3620940\n2   chromedriver                        0x00000001041844b4 cxxbridge1$string$len + 89224\n3   chromedriver                        0x000000010415f994 core::str::slice_error_fail::ha0e52dbcb60e6bae + 3780\n4   chromedriver                        0x00000001041ee890 cxxbridge1$string$len + 524388\n5   chromedriver                        0x000000010420176c cxxbridge1$string$len + 601920\n6   chromedriver                        0x00000001041bd0b0 cxxbridge1$string$len + 321668\n7   chromedriver                        0x00000001041bdd00 cxxbridge1$string$len + 324820\n8   chromedriver                        0x00000001046eee34 cxxbridge1$str$ptr + 3435328\n9   chromedriver                        0x00000001046f214c cxxbridge1$str$ptr + 3448408\n10  chromedriver                        0x00000001046d61a8 cxxbridge1$str$ptr + 3333812\n11  chromedriver                        0x00000001046f2a0c cxxbridge1$str$ptr + 3450648\n12  chromedriver                        0x00000001046c79b4 cxxbridge1$str$ptr + 3274432\n13  chromedriver                        0x000000010470d120 cxxbridge1$str$ptr + 3558956\n14  chromedriver                        0x000000010470d29c cxxbridge1$str$ptr + 3559336\n15  chromedriver                        0x000000010471bfb4 cxxbridge1$str$ptr + 3620032\n16  libsystem_pthread.dylib             0x00000001991a6f94 _pthread_start + 136\n17  libsystem_pthread.dylib             0x00000001991a1d34 thread_start + 8\n"
+    },
+    {
+        "URL": "https://www.cybo.com/LI-biz/haarfrei-jetzt",
+        "Error": "Message: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=131.0.6778.140)\nStacktrace:\n0   chromedriver                        0x0000000104723af0 cxxbridge1$str$ptr + 3651580\n1   chromedriver                        0x000000010471c340 cxxbridge1$str$ptr + 3620940\n2   chromedriver                        0x00000001041844b4 cxxbridge1$string$len + 89224\n3   chromedriver                        0x000000010415f994 core::str::slice_error_fail::ha0e52dbcb60e6bae + 3780\n4   chromedriver                        0x00000001041ee890 cxxbridge1$string$len + 524388\n5   chromedriver                        0x000000010420176c cxxbridge1$string$len + 601920\n6   chromedriver                        0x00000001041bd0b0 cxxbridge1$string$len + 321668\n7   chromedriver                        0x00000001041bdd00 cxxbridge1$string$len + 324820\n8   chromedriver                        0x00000001046eee34 cxxbridge1$str$ptr + 3435328\n9   chromedriver                        0x00000001046f214c cxxbridge1$str$ptr + 3448408\n10  chromedriver                        0x00000001046d61a8 cxxbridge1$str$ptr + 3333812\n11  chromedriver                        0x00000001046f2a0c cxxbridge1$str$ptr + 3450648\n12  chromedriver                        0x00000001046c79b4 cxxbridge1$str$ptr + 3274432\n13  chromedriver                        0x000000010470d120 cxxbridge1$str$ptr + 3558956\n14  chromedriver                        0x000000010470d29c cxxbridge1$str$ptr + 3559336\n15  chromedriver                        0x000000010471bfb4 cxxbridge1$str$ptr + 3620032\n16  libsystem_pthread.dylib             0x00000001991a6f94 _pthread_start + 136\n17  libsystem_pthread.dylib             0x00000001991a1d34 thread_start + 8\n"
+    },
+    {
+        "URL": "https://www.cybo.com/LI-biz/birgit",
+        "Error": "Message: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=131.0.6778.140)\nStacktrace:\n0   chromedriver                        0x0000000104723af0 cxxbridge1$str$ptr + 3651580\n1   chromedriver                        0x000000010471c340 cxxbridge1$str$ptr + 3620940\n2   chromedriver                        0x00000001041844b4 cxxbridge1$string$len + 89224\n3   chromedriver                        0x000000010415f994 core::str::slice_error_fail::ha0e52dbcb60e6bae + 3780\n4   chromedriver                        0x00000001041ee890 cxxbridge1$string$len + 524388\n5   chromedriver                        0x000000010420176c cxxbridge1$string$len + 601920\n6   chromedriver                        0x00000001041bd0b0 cxxbridge1$string$len + 321668\n7   chromedriver                        0x00000001041bdd00 cxxbridge1$string$len + 324820\n8   chromedriver                        0x00000001046eee34 cxxbridge1$str$ptr + 3435328\n9   chromedriver                        0x00000001046f214c cxxbridge1$str$ptr + 3448408\n10  chromedriver                        0x00000001046d61a8 cxxbridge1$str$ptr + 3333812\n11  chromedriver                        0x00000001046f2a0c cxxbridge1$str$ptr + 3450648\n12  chromedriver                        0x00000001046c79b4 cxxbridge1$str$ptr + 3274432\n13  chromedriver                        0x000000010470d120 cxxbridge1$str$ptr + 3558956\n14  chromedriver                        0x000000010470d29c cxxbridge1$str$ptr + 3559336\n15  chromedriver                        0x000000010471bfb4 cxxbridge1$str$ptr + 3620032\n16  libsystem_pthread.dylib             0x00000001991a6f94 _pthread_start + 136\n17  libsystem_pthread.dylib             0x00000001991a1d34 thread_start + 8\n"
+    },
+    {
+        "URL": "https://www.cybo.com/LI-biz/hair-and-body",
+        "Error": "Message: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=131.0.6778.140)\nStacktrace:\n0   chromedriver                        0x0000000104723af0 cxxbridge1$str$ptr + 3651580\n1   chromedriver                        0x000000010471c340 cxxbridge1$str$ptr + 3620940\n2   chromedriver                        0x00000001041844b4 cxxbridge1$string$len + 89224\n3   chromedriver                        0x000000010415f994 core::str::slice_error_fail::ha0e52dbcb60e6bae + 3780\n4   chromedriver                        0x00000001041ee890 cxxbridge1$string$len + 524388\n5   chromedriver                        0x000000010420176c cxxbridge1$string$len + 601920\n6   chromedriver                        0x00000001041bd0b0 cxxbridge1$string$len + 321668\n7   chromedriver                        0x00000001041bdd00 cxxbridge1$string$len + 324820\n8   chromedriver                        0x00000001046eee34 cxxbridge1$str$ptr + 3435328\n9   chromedriver                        0x00000001046f214c cxxbridge1$str$ptr + 3448408\n10  chromedriver                        0x00000001046d61a8 cxxbridge1$str$ptr + 3333812\n11  chromedriver                        0x00000001046f2a0c cxxbridge1$str$ptr + 3450648\n12  chromedriver                        0x00000001046c79b4 cxxbridge1$str$ptr + 3274432\n13  chromedriver                        0x000000010470d120 cxxbridge1$str$ptr + 3558956\n14  chromedriver                        0x000000010470d29c cxxbridge1$str$ptr + 3559336\n15  chromedriver                        0x000000010471bfb4 cxxbridge1$str$ptr + 3620032\n16  libsystem_pthread.dylib             0x00000001991a6f94 _pthread_start + 136\n17  libsystem_pthread.dylib             0x00000001991a1d34 thread_start + 8\n"
+    },
+    {
+        "URL": "https://www.cybo.com/LI-biz/coiffeur-andrea",
+        "Error": "Message: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=131.0.6778.140)\nStacktrace:\n0   chromedriver                        0x0000000104723af0 cxxbridge1$str$ptr + 3651580\n1   chromedriver                        0x000000010471c340 cxxbridge1$str$ptr + 3620940\n2   chromedriver                        0x00000001041844b4 cxxbridge1$string$len + 89224\n3   chromedriver                        0x000000010415f994 core::str::slice_error_fail::ha0e52dbcb60e6bae + 3780\n4   chromedriver                        0x00000001041ee890 cxxbridge1$string$len + 524388\n5   chromedriver                        0x000000010420176c cxxbridge1$string$len + 601920\n6   chromedriver                        0x00000001041bd0b0 cxxbridge1$string$len + 321668\n7   chromedriver                        0x00000001041bdd00 cxxbridge1$string$len + 324820\n8   chromedriver                        0x00000001046eee34 cxxbridge1$str$ptr + 3435328\n9   chromedriver                        0x00000001046f214c cxxbridge1$str$ptr + 3448408\n10  chromedriver                        0x00000001046d61a8 cxxbridge1$str$ptr + 3333812\n11  chromedriver                        0x00000001046f2a0c cxxbridge1$str$ptr + 3450648\n12  chromedriver                        0x00000001046c79b4 cxxbridge1$str$ptr + 3274432\n13  chromedriver                        0x000000010470d120 cxxbridge1$str$ptr + 3558956\n14  chromedriver                        0x000000010470d29c cxxbridge1$str$ptr + 3559336\n15  chromedriver                        0x000000010471bfb4 cxxbridge1$str$ptr + 3620032\n16  libsystem_pthread.dylib             0x00000001991a6f94 _pthread_start + 136\n17  libsystem_pthread.dylib             0x00000001991a1d34 thread_start + 8\n"
+    },
+    {
+        "URL": "https://www.cybo.com/LI-biz/mrs-gerda-elkuch-fusspflegesalon_1R",
+        "Error": "Message: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=131.0.6778.140)\nStacktrace:\n0   chromedriver                        0x0000000104723af0 cxxbridge1$str$ptr + 3651580\n1   chromedriver                        0x000000010471c340 cxxbridge1$str$ptr + 3620940\n2   chromedriver                        0x00000001041844b4 cxxbridge1$string$len + 89224\n3   chromedriver                        0x000000010415f994 core::str::slice_error_fail::ha0e52dbcb60e6bae + 3780\n4   chromedriver                        0x00000001041ee890 cxxbridge1$string$len + 524388\n5   chromedriver                        0x000000010420176c cxxbridge1$string$len + 601920\n6   chromedriver                        0x00000001041bd0b0 cxxbridge1$string$len + 321668\n7   chromedriver                        0x00000001041bdd00 cxxbridge1$string$len + 324820\n8   chromedriver                        0x00000001046eee34 cxxbridge1$str$ptr + 3435328\n9   chromedriver                        0x00000001046f214c cxxbridge1$str$ptr + 3448408\n10  chromedriver                        0x00000001046d61a8 cxxbridge1$str$ptr + 3333812\n11  chromedriver                        0x00000001046f2a0c cxxbridge1$str$ptr + 3450648\n12  chromedriver                        0x00000001046c79b4 cxxbridge1$str$ptr + 3274432\n13  chromedriver                        0x000000010470d120 cxxbridge1$str$ptr + 3558956\n14  chromedriver                        0x000000010470d29c cxxbridge1$str$ptr + 3559336\n15  chromedriver                        0x000000010471bfb4 cxxbridge1$str$ptr + 3620032\n16  libsystem_pthread.dylib             0x00000001991a6f94 _pthread_start + 136\n17  libsystem_pthread.dylib             0x00000001991a1d34 thread_start + 8\n"
+    },
+    {
+        "URL": "https://www.cybo.com/LI-biz/adventure-coiffeur-manuela",
+        "Error": "Message: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=131.0.6778.140)\nStacktrace:\n0   chromedriver                        0x0000000104723af0 cxxbridge1$str$ptr + 3651580\n1   chromedriver                        0x000000010471c340 cxxbridge1$str$ptr + 3620940\n2   chromedriver                        0x00000001041844b4 cxxbridge1$string$len + 89224\n3   chromedriver                        0x000000010415f994 core::str::slice_error_fail::ha0e52dbcb60e6bae + 3780\n4   chromedriver                        0x00000001041ee890 cxxbridge1$string$len + 524388\n5   chromedriver                        0x000000010420176c cxxbridge1$string$len + 601920\n6   chromedriver                        0x00000001041bd0b0 cxxbridge1$string$len + 321668\n7   chromedriver                        0x00000001041bdd00 cxxbridge1$string$len + 324820\n8   chromedriver                        0x00000001046eee34 cxxbridge1$str$ptr + 3435328\n9   chromedriver                        0x00000001046f214c cxxbridge1$str$ptr + 3448408\n10  chromedriver                        0x00000001046d61a8 cxxbridge1$str$ptr + 3333812\n11  chromedriver                        0x00000001046f2a0c cxxbridge1$str$ptr + 3450648\n12  chromedriver                        0x00000001046c79b4 cxxbridge1$str$ptr + 3274432\n13  chromedriver                        0x000000010470d120 cxxbridge1$str$ptr + 3558956\n14  chromedriver                        0x000000010470d29c cxxbridge1$str$ptr + 3559336\n15  chromedriver                        0x000000010471bfb4 cxxbridge1$str$ptr + 3620032\n16  libsystem_pthread.dylib             0x00000001991a6f94 _pthread_start + 136\n17  libsystem_pthread.dylib             0x00000001991a1d34 thread_start + 8\n"
+    },
+    {
+        "URL": "https://www.cybo.com/LI-biz/corina",
+        "Error": "Message: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=131.0.6778.140)\nStacktrace:\n0   chromedriver                        0x0000000104723af0 cxxbridge1$str$ptr + 3651580\n1   chromedriver                        0x000000010471c340 cxxbridge1$str$ptr + 3620940\n2   chromedriver                        0x00000001041844b4 cxxbridge1$string$len + 89224\n3   chromedriver                        0x000000010415f994 core::str::slice_error_fail::ha0e52dbcb60e6bae + 3780\n4   chromedriver                        0x00000001041ee890 cxxbridge1$string$len + 524388\n5   chromedriver                        0x000000010420176c cxxbridge1$string$len + 601920\n6   chromedriver                        0x00000001041bd0b0 cxxbridge1$string$len + 321668\n7   chromedriver                        0x00000001041bdd00 cxxbridge1$string$len + 324820\n8   chromedriver                        0x00000001046eee34 cxxbridge1$str$ptr + 3435328\n9   chromedriver                        0x00000001046f214c cxxbridge1$str$ptr + 3448408\n10  chromedriver                        0x00000001046d61a8 cxxbridge1$str$ptr + 3333812\n11  chromedriver                        0x00000001046f2a0c cxxbridge1$str$ptr + 3450648\n12  chromedriver                        0x00000001046c79b4 cxxbridge1$str$ptr + 3274432\n13  chromedriver                        0x000000010470d120 cxxbridge1$str$ptr + 3558956\n14  chromedriver                        0x000000010470d29c cxxbridge1$str$ptr + 3559336\n15  chromedriver                        0x000000010471bfb4 cxxbridge1$str$ptr + 3620032\n16  libsystem_pthread.dylib             0x00000001991a6f94 _pthread_start + 136\n17  libsystem_pthread.dylib             0x00000001991a1d34 thread_start + 8\n"
+    },
+    {
+        "URL": "https://www.cybo.com/LI-biz/haarzentrum-lett_1b",
+        "Error": "Message: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=131.0.6778.140)\nStacktrace:\n0   chromedriver                        0x0000000104723af0 cxxbridge1$str$ptr + 3651580\n1   chromedriver                        0x000000010471c340 cxxbridge1$str$ptr + 3620940\n2   chromedriver                        0x00000001041844b4 cxxbridge1$string$len + 89224\n3   chromedriver                        0x000000010415f994 core::str::slice_error_fail::ha0e52dbcb60e6bae + 3780\n4   chromedriver                        0x00000001041ee890 cxxbridge1$string$len + 524388\n5   chromedriver                        0x000000010420176c cxxbridge1$string$len + 601920\n6   chromedriver                        0x00000001041bd0b0 cxxbridge1$string$len + 321668\n7   chromedriver                        0x00000001041bdd00 cxxbridge1$string$len + 324820\n8   chromedriver                        0x00000001046eee34 cxxbridge1$str$ptr + 3435328\n9   chromedriver                        0x00000001046f214c cxxbridge1$str$ptr + 3448408\n10  chromedriver                        0x00000001046d61a8 cxxbridge1$str$ptr + 3333812\n11  chromedriver                        0x00000001046f2a0c cxxbridge1$str$ptr + 3450648\n12  chromedriver                        0x00000001046c79b4 cxxbridge1$str$ptr + 3274432\n13  chromedriver                        0x000000010470d120 cxxbridge1$str$ptr + 3558956\n14  chromedriver                        0x000000010470d29c cxxbridge1$str$ptr + 3559336\n15  chromedriver                        0x000000010471bfb4 cxxbridge1$str$ptr + 3620032\n16  libsystem_pthread.dylib             0x00000001991a6f94 _pthread_start + 136\n17  libsystem_pthread.dylib             0x00000001991a1d34 thread_start + 8\n"
+    },
+    {
+        "URL": "https://www.cybo.com/LI-biz/kristina-sprenger-visagistin",
+        "Error": "Message: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=131.0.6778.140)\nStacktrace:\n0   chromedriver                        0x0000000104723af0 cxxbridge1$str$ptr + 3651580\n1   chromedriver                        0x000000010471c340 cxxbridge1$str$ptr + 3620940\n2   chromedriver                        0x00000001041844b4 cxxbridge1$string$len + 89224\n3   chromedriver                        0x000000010415f994 core::str::slice_error_fail::ha0e52dbcb60e6bae + 3780\n4   chromedriver                        0x00000001041ee890 cxxbridge1$string$len + 524388\n5   chromedriver                        0x000000010420176c cxxbridge1$string$len + 601920\n6   chromedriver                        0x00000001041bd0b0 cxxbridge1$string$len + 321668\n7   chromedriver                        0x00000001041bdd00 cxxbridge1$string$len + 324820\n8   chromedriver                        0x00000001046eee34 cxxbridge1$str$ptr + 3435328\n9   chromedriver                        0x00000001046f214c cxxbridge1$str$ptr + 3448408\n10  chromedriver                        0x00000001046d61a8 cxxbridge1$str$ptr + 3333812\n11  chromedriver                        0x00000001046f2a0c cxxbridge1$str$ptr + 3450648\n12  chromedriver                        0x00000001046c79b4 cxxbridge1$str$ptr + 3274432\n13  chromedriver                        0x000000010470d120 cxxbridge1$str$ptr + 3558956\n14  chromedriver                        0x000000010470d29c cxxbridge1$str$ptr + 3559336\n15  chromedriver                        0x000000010471bfb4 cxxbridge1$str$ptr + 3620032\n16  libsystem_pthread.dylib             0x00000001991a6f94 _pthread_start + 136\n17  libsystem_pthread.dylib             0x00000001991a1d34 thread_start + 8\n"
+    },
+    {
+        "URL": "https://www.cybo.com/LI-biz/varga-hair-international-ag",
+        "Error": "Message: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=131.0.6778.140)\nStacktrace:\n0   chromedriver                        0x0000000104723af0 cxxbridge1$str$ptr + 3651580\n1   chromedriver                        0x000000010471c340 cxxbridge1$str$ptr + 3620940\n2   chromedriver                        0x00000001041844b4 cxxbridge1$string$len + 89224\n3   chromedriver                        0x000000010415f994 core::str::slice_error_fail::ha0e52dbcb60e6bae + 3780\n4   chromedriver                        0x00000001041ee890 cxxbridge1$string$len + 524388\n5   chromedriver                        0x000000010420176c cxxbridge1$string$len + 601920\n6   chromedriver                        0x00000001041bd0b0 cxxbridge1$string$len + 321668\n7   chromedriver                        0x00000001041bdd00 cxxbridge1$string$len + 324820\n8   chromedriver                        0x00000001046eee34 cxxbridge1$str$ptr + 3435328\n9   chromedriver                        0x00000001046f214c cxxbridge1$str$ptr + 3448408\n10  chromedriver                        0x00000001046d61a8 cxxbridge1$str$ptr + 3333812\n11  chromedriver                        0x00000001046f2a0c cxxbridge1$str$ptr + 3450648\n12  chromedriver                        0x00000001046c79b4 cxxbridge1$str$ptr + 3274432\n13  chromedriver                        0x000000010470d120 cxxbridge1$str$ptr + 3558956\n14  chromedriver                        0x000000010470d29c cxxbridge1$str$ptr + 3559336\n15  chromedriver                        0x000000010471bfb4 cxxbridge1$str$ptr + 3620032\n16  libsystem_pthread.dylib             0x00000001991a6f94 _pthread_start + 136\n17  libsystem_pthread.dylib             0x00000001991a1d34 thread_start + 8\n"
+    },
+    {
+        "URL": "https://www.cybo.com/LI-biz/mrs-corinna-chesi-coiffeursalon",
+        "Error": "Message: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=131.0.6778.140)\nStacktrace:\n0   chromedriver                        0x0000000104723af0 cxxbridge1$str$ptr + 3651580\n1   chromedriver                        0x000000010471c340 cxxbridge1$str$ptr + 3620940\n2   chromedriver                        0x00000001041844b4 cxxbridge1$string$len + 89224\n3   chromedriver                        0x000000010415f994 core::str::slice_error_fail::ha0e52dbcb60e6bae + 3780\n4   chromedriver                        0x00000001041ee890 cxxbridge1$string$len + 524388\n5   chromedriver                        0x000000010420176c cxxbridge1$string$len + 601920\n6   chromedriver                        0x00000001041bd0b0 cxxbridge1$string$len + 321668\n7   chromedriver                        0x00000001041bdd00 cxxbridge1$string$len + 324820\n8   chromedriver                        0x00000001046eee34 cxxbridge1$str$ptr + 3435328\n9   chromedriver                        0x00000001046f214c cxxbridge1$str$ptr + 3448408\n10  chromedriver                        0x00000001046d61a8 cxxbridge1$str$ptr + 3333812\n11  chromedriver                        0x00000001046f2a0c cxxbridge1$str$ptr + 3450648\n12  chromedriver                        0x00000001046c79b4 cxxbridge1$str$ptr + 3274432\n13  chromedriver                        0x000000010470d120 cxxbridge1$str$ptr + 3558956\n14  chromedriver                        0x000000010470d29c cxxbridge1$str$ptr + 3559336\n15  chromedriver                        0x000000010471bfb4 cxxbridge1$str$ptr + 3620032\n16  libsystem_pthread.dylib             0x00000001991a6f94 _pthread_start + 136\n17  libsystem_pthread.dylib             0x00000001991a1d34 thread_start + 8\n"
+    },
+    {
+        "URL": "https://www.cybo.com/LI-biz/viva-balance",
+        "Error": "Message: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=131.0.6778.140)\nStacktrace:\n0   chromedriver                        0x0000000104723af0 cxxbridge1$str$ptr + 3651580\n1   chromedriver                        0x000000010471c340 cxxbridge1$str$ptr + 3620940\n2   chromedriver                        0x00000001041844b4 cxxbridge1$string$len + 89224\n3   chromedriver                        0x000000010415f994 core::str::slice_error_fail::ha0e52dbcb60e6bae + 3780\n4   chromedriver                        0x00000001041ee890 cxxbridge1$string$len + 524388\n5   chromedriver                        0x000000010420176c cxxbridge1$string$len + 601920\n6   chromedriver                        0x00000001041bd0b0 cxxbridge1$string$len + 321668\n7   chromedriver                        0x00000001041bdd00 cxxbridge1$string$len + 324820\n8   chromedriver                        0x00000001046eee34 cxxbridge1$str$ptr + 3435328\n9   chromedriver                        0x00000001046f214c cxxbridge1$str$ptr + 3448408\n10  chromedriver                        0x00000001046d61a8 cxxbridge1$str$ptr + 3333812\n11  chromedriver                        0x00000001046f2a0c cxxbridge1$str$ptr + 3450648\n12  chromedriver                        0x00000001046c79b4 cxxbridge1$str$ptr + 3274432\n13  chromedriver                        0x000000010470d120 cxxbridge1$str$ptr + 3558956\n14  chromedriver                        0x000000010470d29c cxxbridge1$str$ptr + 3559336\n15  chromedriver                        0x000000010471bfb4 cxxbridge1$str$ptr + 3620032\n16  libsystem_pthread.dylib             0x00000001991a6f94 _pthread_start + 136\n17  libsystem_pthread.dylib             0x00000001991a1d34 thread_start + 8\n"
+    },
+    {
+        "URL": "https://www.cybo.com/LI-biz/salon-brigitte",
+        "Error": "Message: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=131.0.6778.140)\nStacktrace:\n0   chromedriver                        0x0000000104723af0 cxxbridge1$str$ptr + 3651580\n1   chromedriver                        0x000000010471c340 cxxbridge1$str$ptr + 3620940\n2   chromedriver                        0x00000001041844b4 cxxbridge1$string$len + 89224\n3   chromedriver                        0x000000010415f994 core::str::slice_error_fail::ha0e52dbcb60e6bae + 3780\n4   chromedriver                        0x00000001041ee890 cxxbridge1$string$len + 524388\n5   chromedriver                        0x000000010420176c cxxbridge1$string$len + 601920\n6   chromedriver                        0x00000001041bd0b0 cxxbridge1$string$len + 321668\n7   chromedriver                        0x00000001041bdd00 cxxbridge1$string$len + 324820\n8   chromedriver                        0x00000001046eee34 cxxbridge1$str$ptr + 3435328\n9   chromedriver                        0x00000001046f214c cxxbridge1$str$ptr + 3448408\n10  chromedriver                        0x00000001046d61a8 cxxbridge1$str$ptr + 3333812\n11  chromedriver                        0x00000001046f2a0c cxxbridge1$str$ptr + 3450648\n12  chromedriver                        0x00000001046c79b4 cxxbridge1$str$ptr + 3274432\n13  chromedriver                        0x000000010470d120 cxxbridge1$str$ptr + 3558956\n14  chromedriver                        0x000000010470d29c cxxbridge1$str$ptr + 3559336\n15  chromedriver                        0x000000010471bfb4 cxxbridge1$str$ptr + 3620032\n16  libsystem_pthread.dylib             0x00000001991a6f94 _pthread_start + 136\n17  libsystem_pthread.dylib             0x00000001991a1d34 thread_start + 8\n"
+    },
+    {
+        "URL": "https://www.cybo.com/LI-biz/coiffeur-emozioni",
+        "Error": "Message: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=131.0.6778.140)\nStacktrace:\n0   chromedriver                        0x0000000104723af0 cxxbridge1$str$ptr + 3651580\n1   chromedriver                        0x000000010471c340 cxxbridge1$str$ptr + 3620940\n2   chromedriver                        0x00000001041844b4 cxxbridge1$string$len + 89224\n3   chromedriver                        0x000000010415f994 core::str::slice_error_fail::ha0e52dbcb60e6bae + 3780\n4   chromedriver                        0x00000001041ee890 cxxbridge1$string$len + 524388\n5   chromedriver                        0x000000010420176c cxxbridge1$string$len + 601920\n6   chromedriver                        0x00000001041bd0b0 cxxbridge1$string$len + 321668\n7   chromedriver                        0x00000001041bdd00 cxxbridge1$string$len + 324820\n8   chromedriver                        0x00000001046eee34 cxxbridge1$str$ptr + 3435328\n9   chromedriver                        0x00000001046f214c cxxbridge1$str$ptr + 3448408\n10  chromedriver                        0x00000001046d61a8 cxxbridge1$str$ptr + 3333812\n11  chromedriver                        0x00000001046f2a0c cxxbridge1$str$ptr + 3450648\n12  chromedriver                        0x00000001046c79b4 cxxbridge1$str$ptr + 3274432\n13  chromedriver                        0x000000010470d120 cxxbridge1$str$ptr + 3558956\n14  chromedriver                        0x000000010470d29c cxxbridge1$str$ptr + 3559336\n15  chromedriver                        0x000000010471bfb4 cxxbridge1$str$ptr + 3620032\n16  libsystem_pthread.dylib             0x00000001991a6f94 _pthread_start + 136\n17  libsystem_pthread.dylib             0x00000001991a1d34 thread_start + 8\n"
+    }
+]
