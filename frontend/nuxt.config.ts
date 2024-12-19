@@ -10,10 +10,15 @@ export default defineNuxtConfig({
       meta: [
         { name: 'color-scheme', content: 'light dark' },
       ],
-
     }
   },
-  modules: ["@nuxtjs/google-fonts"],
+  runtimeConfig: {
+    public: {
+      apiBaseUrl: 'http://localhost:8000'
+    }
+  },
+  modules: ["@nuxtjs/google-fonts", "@pinia/nuxt" ],
+
   css: [
     '/styles/normalize.css',
     '/styles/global.css'

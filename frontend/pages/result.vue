@@ -1,144 +1,89 @@
 <template>
     <div class="bg-[#f1f1f1] bg-cover min-h-screen p-10 font-raleway">
         <div class="flex justify-center">
-            <div class="flex flex-row max-w-6xl pt-4">
+            <div class="flex flex-row max-w-6xl pl-4">
                 <NuxtLink to="/">
-                    <h1 class="font-oswald text-4xl text-[#111111] font-normal">Blyat naydi usge chto to</h1>
+                    <h1 class="font-oswald text-4xl text-[#111111] font-normal pl-4">Find Beauty</h1>
                 </NuxtLink>
                 <SearchBar />
             </div>
         </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 mt-20 items-start">
-            <Card v-for="item in processedResults" :key="item.id" :item="item" />
+
+        <!-- Loading State -->
+        <div v-if="isLoading" class="flex justify-center items-center mt-20">
+            <p class="text-xl font-bold">Loading results...</p>
+        </div>
+
+        <!-- Error State -->
+        <div v-if="errorMessage" class="flex justify-center items-center mt-20">
+            <p class="text-red-500 text-xl font-bold">{{ errorMessage }}</p>
+        </div>
+
+        <!-- Display Results -->
+        <div v-if="!isLoading && !errorMessage" class="grid grid-cols-2 gap-10 mt-20 items-start">
+            <Card v-for="item in processedResults" :key="item.docno" :item="item" />
         </div>
     </div>
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue';
+import { ref, onMounted, computed, watch } from 'vue';
+import { useSearchStore } from '~/stores/searchStore';
+import { useRouter } from 'vue-router';
 
-interface SearchResult {
-    id: number;
-    title: string;
-    address: string;
-    mobile?: string | null;
-    email?: string | null;
-    categories?: string[];
-    openingTimes?: Record<string, string>;
-}
+const store = useSearchStore();
 
-const rawData = [
-    {
-        id: 1,
-        title: "Q-Quality Coiffure",
-        address: "Vordergasse 64, 8200 Schaffhausen",
-        mobile: "052 625 03 90",
-        email: "mail@quu.ch",
-        categories: ["Hairdresser", "Stylist"],
-        openingTimes: {
-            Monday: "10:00 to 20:00",
-            Tuesday: "10:00 to 20:00",
-            Wednesday: "10:00 to 20:00",
-            Thursday: "10:00 to 20:00",
-            Friday: "10:00 to 20:00",
-            Saturday: "9:00 to 18:00",
-            Sunday: "Closed",
-        },
-    },
-    {
-        id: 2,
-        title: "Another Business Name Here goes",
-        address: "Some Address",
-        mobile: null,
-        email: null,
-        categories: [],
-        openingTimes: {
-            Monday: "9:00 to 19:00",
-            Tuesday: "9:00 to 19:00",
-            Wednesday: "9:00 to 19:00",
-            Thursday: "9:00 to 19:00",
-            Friday: "9:00 to 19:00",
-            Saturday: "9:00 to 17:00",
-            Sunday: "Closed",
-        },
-    },
-    {
-        id: 3,
-        title: "Q-Quality Coiffure",
-        address: "Vordergasse 64, 8200 Schaffhausen",
-        mobile: "052 625 03 90",
-        email: "mail@quu.ch",
-        categories: ["Hairdresser", "Stylist", "Hairdresser", "Stylist", "Hairdresser", "Stylist", "Hairdresser", "Stylist"],
-        openingTimes: {
-            Monday: "10:00 to 20:00",
-            Tuesday: "10:00 to 20:00",
-            Wednesday: "10:00 to 20:00",
-            Thursday: "10:00 to 20:00",
-            Friday: "10:00 to 20:00",
-            Saturday: "9:00 to 18:00",
-            Sunday: "Closed",
-        },
-    },
-    {
-        id: 4,
-        title: "Q-Quality Coiffure",
-        address: "Vordergasse 64, 8200 Schaffhausen",
-        mobile: "052 625 03 90",
-        email: "mail@quu.ch",
-        categories: ["Hairdresser", "Stylist"],
-        openingTimes: {
-            Monday: "10:00 to 20:00",
-            Tuesday: "10:00 to 20:00",
-            Wednesday: "10:00 to 20:00",
-            Thursday: "10:00 to 20:00",
-            Friday: "10:00 to 20:00",
-            Saturday: "9:00 to 18:00",
-            Sunday: "Closed",
-        },
-    },
-    {
-        id: 5,
-        title: "Q-Quality Coiffure",
-        address: "Vordergasse 64, 8200 Schaffhausen",
-        mobile: "052 625 03 90",
-        email: "mail@quu.ch",
-        categories: ["Hairdresser", "Stylist"],
-        openingTimes: {
-            Monday: "10:00 to 20:00",
-            Tuesday: "10:00 to 20:00",
-            Wednesday: "10:00 to 20:00",
-            Thursday: "10:00 to 20:00",
-            Friday: "10:00 to 20:00",
-            Saturday: "9:00 to 18:00",
-            Sunday: "Closed",
-        },
-    },
-    {
-        id: 6,
-        title: "Q-Quality Coiffure",
-        address: "Vordergasse 64, 8200 Schaffhausen",
-        mobile: "052 625 03 90",
-        email: "mail@quu.ch",
-        categories: ["Hairdresser", "Stylist"],
-        openingTimes: {
-            Monday: "10:00 to 20:00",
-            Tuesday: "10:00 to 20:00",
-            Wednesday: "10:00 to 20:00",
-            Thursday: "10:00 to 20:00",
-            Friday: "10:00 to 20:00",
-            Saturday: "9:00 to 18:00",
-            Sunday: "Closed",
-        },
-    },
-    {
-        id: 7,
-        title: "Q-Quality Coiffure",
-        address: "Vordergasse 64, 8200 Schaffhausen",
-        mobile: "052 625 03 90",
-        email: "mail@quu.ch",
-        categories: ["Hairdresser"],
-    },
-];
 
-const processedResults = ref<SearchResult[]>(rawData);
+const isLoading = ref<boolean>(true);
+const errorMessage = ref<string | null>(null);
+
+const processedResults = computed(() => store.results || []);
+
+const fetchResults = async () => {
+    try {
+        const response: any = await $fetch('http://localhost:8000', {
+            method: 'POST',
+            body: { query: store.searchQuery },
+        });
+
+        let parsedResponse;
+        try {
+            parsedResponse = typeof response === 'string' ? JSON.parse(response) : response;
+        } catch (err) {
+            console.error('Response parsing error', err);
+            errorMessage.value = 'Server returned an invalid response.';
+            return;
+        }
+
+        if (Array.isArray(parsedResponse) && parsedResponse.length > 0) {
+            store.setResults(parsedResponse); 
+        } else if (Array.isArray(parsedResponse) && parsedResponse.length === 0) {
+            errorMessage.value = "No results found for your search.";
+        }
+        else if (typeof parsedResponse === 'object' && parsedResponse !== null && 'message' in parsedResponse) {
+            errorMessage.value = parsedResponse.message || "No results found for your search.";
+        }
+        else {
+            errorMessage.value = "Unexpected server response.";
+        }
+    } catch (err) {
+        errorMessage.value = `Failed to load results: ${err instanceof Error ? err.message : String(err)}`;
+    } finally {
+        isLoading.value = false;
+    }
+
+};
+
+onMounted(() => {
+    fetchResults();
+});
+
+watch(
+    () => store.searchQuery,
+    (newQuery, oldQuery) => {
+        if (newQuery !== oldQuery) {
+            fetchResults();
+        }
+    }
+);
 </script>

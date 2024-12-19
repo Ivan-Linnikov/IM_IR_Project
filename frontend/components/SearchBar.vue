@@ -8,7 +8,7 @@
                 <!-- Search Input -->
                 <div class="flex items-center space-x-2 ">
                     <Icon icon="mdi:magnify" class="h-5 w-5 " />
-                    <input type="text" v-model="searchQuery" placeholder="Type what you need ..."
+                    <input type="query" v-model="searchQuery" placeholder="Type what you need ..."
                         class="outline-none bg-white text-black  placeholder-[#111111] w-52 " required />
                 </div>
 
@@ -43,26 +43,22 @@
     </div>
 </template>
 
-<script setup>
+<script lang="ts" setup>
 import { Icon } from '@iconify/vue';
+import { useRouter } from 'vue-router';
+import { useSearchStore } from '~/stores/searchStore';
 import { ref } from 'vue';
-import { useRouter } from 'vue-router'; // Use router for navigation
 
-// Form inputs
-const searchQuery = ref('');
-const location = ref('');
-const date = ref('');
-const time = ref('');
-
-// Form reference
-const searchForm = ref(null);
-
-// Date and time inputs
-const dateInput = ref(null);
-const timeInput = ref(null);
-
-// Router instance
+const store = useSearchStore();
 const router = useRouter();
+
+const searchQuery = ref<string>('');
+const location = ref<string>('');
+const date = ref<string>('');
+const time = ref<string>('');
+
+const dateInput = ref<HTMLInputElement | null>(null);
+const timeInput = ref<HTMLInputElement | null>(null);
 
 const openDatePicker = () => {
     if (dateInput.value) {
@@ -76,21 +72,20 @@ const openTimePicker = () => {
     }
 };
 
-const performSearch = () => {
-    // Validate the form using native form validation
-    if (!searchForm.value.checkValidity()) {
-        console.warn('The form is not valid. Please fill in the required fields.');
-        searchForm.value.reportValidity(); // Show native validation message
-        return; // Stop execution and prevent redirection
+const performSearch = async () => {
+    try {
+        store.setSearchData(searchQuery.value, location.value, date.value, time.value);
+        
+        router.push('/result');
+    } catch (err) {
+        console.error('Search error:', err instanceof Error ? err.message : String(err));
     }
-
-    // Log the input data to the console
-    console.log('Search Query:', searchQuery.value);
-    console.log('Location:', location.value);
-    console.log('Date:', date.value);
-    console.log('Time:', time.value);
-
-    // Redirect to the result page
-    router.push('/result');
 };
+
+
+
+
+
+
+
 </script>
