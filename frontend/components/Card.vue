@@ -3,7 +3,7 @@
         <div class="flex items-center justify-between mb-4">
             <h3 class="text-2xl font-black font-raleway text-[#111111]">{{ item.Name }}</h3>
             <div class="ml-auto flex items-center space-x-2 relative">
-                <div class="relative group">
+                <div class="relative group" @click="$emit('mark-relevant', item.docno)">
                     <Icon
                         icon="mdi:plus"
                         class="bg-black text-white w-6 h-6 p-1 rounded-full transition-all duration-300 hover:border hover:border-black hover:bg-white hover:text-[#111111] cursor-pointer"
@@ -12,7 +12,7 @@
                         Relevant
                     </div>
                 </div>
-                <div class="relative group">
+                <div class="relative group" @click="$emit('mark-not-relevant', item.docno)">
                     <Icon
                         icon="mdi:minus"
                         class="bg-black text-white w-6 h-6 p-1 rounded-full transition-all duration-300 hover:border hover:border-black hover:bg-white hover:text-[#111111] cursor-pointer"

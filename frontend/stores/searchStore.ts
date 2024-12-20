@@ -1,5 +1,5 @@
 export const useSearchStore = defineStore('searchStore', () => {
-    const searchQuery = ref<string>(''); // This will now stay reactive across all pages
+    const searchQuery = ref<string>('');
     const results = ref<any[]>([]);
     const isLoading = ref(false);
     const errorMessage = ref<string | null>(null);
@@ -14,22 +14,14 @@ export const useSearchStore = defineStore('searchStore', () => {
 
     const fetchResults = async () => {
         isLoading.value = true;
-        errorMessage.value = null; // Clear error before new fetch
+        errorMessage.value = null; 
         try {
             const response: any = await $fetch('http://localhost:8000', {
                 method: 'POST',
-                body: { query: searchQuery.value }, // Ensure you send the correct query
+                body: { query: searchQuery.value }, 
             });
-            console.log('Raw Response from API:', response);
     
-            let parsedResponse;
-            try {
-                parsedResponse = typeof response === 'string' ? JSON.parse(response) : response;
-            } catch (err) {
-                console.error('Response parsing error', err);
-                errorMessage.value = 'Server returned an invalid response.';
-                return;
-            }
+            let parsedResponse = typeof response === 'string' ? JSON.parse(response) : response;
     
             if (Array.isArray(parsedResponse) && parsedResponse.length > 0) {
                 setResults(parsedResponse); 
@@ -38,7 +30,6 @@ export const useSearchStore = defineStore('searchStore', () => {
             } else if (typeof parsedResponse === 'object' && parsedResponse !== null && 'message' in parsedResponse) {
                 errorMessage.value = parsedResponse.message || "No results found for your search.";
             }
-            
         } catch (err) {
             errorMessage.value = `Failed to load results: ${err instanceof Error ? err.message : String(err)}`;
         } finally {
@@ -55,4 +46,5 @@ export const useSearchStore = defineStore('searchStore', () => {
         setResults, 
         fetchResults 
     };
-});
+}, 
+);
