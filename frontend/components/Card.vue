@@ -63,8 +63,8 @@
         class="transition-all duration-300 overflow-hidden mt-4">
         <ul class="p-2 space-y-4 text-[#111111] text-l font-semibold">
           <li v-for="(time, day) in item['Opening Times']" :key="day" class="flex justify-between">
-            <span>{{ cleanDay(day) }}:</span>
-            <span>{{ cleanTimeRange(time) }}</span>
+            <span>{{ day }}:</span>
+            <span>{{ time }}</span>
           </li>
         </ul>
         </div>
@@ -105,18 +105,6 @@ function toggleOpeningHours(docno: string) {
 
 function isOpen(docno: string): boolean {
   return openCards.value.includes(docno);
-}
-
-
-function cleanDay(day: string): string {
-    return day.replace(/\*/g, '').trim(); 
-}
-
-function cleanTimeRange(timeRange: string): string {
-    let cleaned = timeRange.trim();
-    cleaned = cleaned.replace(/\s*-\s*/g, '-');
-    cleaned = cleaned.replace(/-\s*to\s*/g, ' to ');
-    return cleaned;
 }
 
 </script>

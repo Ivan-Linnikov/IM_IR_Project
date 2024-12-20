@@ -149,8 +149,21 @@ async function applyFilters(): Promise<void> {
             body: filters,
         });
 
-        store.results = response as any[];
-
+        if (response && Array.isArray(response)) {
+            console.log('API Response:', response); // ✅ Log response for debugging
+            store.results = response.map(item => ({
+                Name: item.Name || 'No Name', // Default values for safety
+                Address: item.Address || 'No Address',
+                Mobile: item.Mobile || 'No Mobile',
+                Email: item.Email || 'No Email',
+                Categories: item.Categories || ['Uncategorized'],
+                'Opening Times': item['Opening Times'] || {},
+                docno: item.docno || `doc-${Math.random()}`, // Ensure docno exists
+            }));
+        } else {
+            console.warn('Unexpected response format:', response);
+            store.results = []; // Clear results to prevent blank cards
+        }
     } catch (error) {
         console.error('Error applying filters:', error);
         store.errorMessage = 'An error occurred while applying filters.';
@@ -158,6 +171,7 @@ async function applyFilters(): Promise<void> {
         store.isLoading = false;
     }
 }
+
 
 function markAsRelevant(docno: string): void {
     const index = store.results.findIndex(item => item.docno === docno);
