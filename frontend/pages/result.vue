@@ -1,23 +1,17 @@
 <template>
     <div class="bg-[#f1f1f1] bg-cover min-h-screen font-raleway p-10">
-        <!-- Title and Search Bar -->
         <div class="flex flex-column items-center w-full">
-            <!-- Title on the very left of the page -->
             <NuxtLink to="/" class="pl-0">
                 <h1 class="font-oswald text-4xl text-[#111111] font-normal">Find Beauty</h1>
             </NuxtLink>
-            <!-- Centered Search Bar -->
             <div class="flex-grow flex justify-center">
                 <SearchBar class="w-full max-w-6xl" />
             </div>
         </div>
 
-
-        <!-- Filter Section -->
         <div class="flex justify-center mt-8">
             <div class="flex items-end justify-center w-full max-w-6xl space-x-4">
 
-                <!-- City Select -->
                 <div class="w-1/3 relative">
                     <label for="city" class="block text-sm font-medium text-[#111111] mb-2">City</label>
                     <div class="flex items-center w-full bg-white rounded-full shadow-lg p-3 space-x-2">
@@ -35,7 +29,6 @@
                     </ul>
                 </div>
 
-                <!-- Day of the Week Select -->
                 <div class="w-1/5">
                     <label for="day" class="block text-sm font-medium text-[#111111] mb-2">Day</label>
                     <div class="flex items-center w-full bg-white rounded-full shadow-lg p-3">
@@ -52,7 +45,6 @@
                     </div>
                 </div>
 
-                <!-- Time Input -->
                 <div class="w-1/5">
                     <label for="time" class="block text-sm font-medium text-[#111111] mb-2">Time</label>
                     <div class="flex items-center w-full bg-white rounded-full shadow-lg p-3 cursor-pointer"
@@ -62,7 +54,6 @@
                     </div>
                 </div>
 
-                <!-- Filter Button -->
                 <div class="flex items-end">
                     <button @click="applyFilters"
                         class="bg-black text-white px-6 py-3 rounded-full transition-all duration-300 hover:border hover:border-black hover:bg-white hover:text-[#111111]">
@@ -95,7 +86,6 @@ import SearchBar from '~/components/SearchBar.vue';
 
 const store = useSearchStore();
 
-// City input logic
 const cityInput: Ref<string> = ref('');
 const filteredCities: Ref<string[]> = ref([]);
 const showCityOptions: Ref<boolean> = ref(false);
@@ -1045,7 +1035,6 @@ async function applyFilters(): Promise<void> {
         store.results = response as any[];
         console.log('Results:', store.results);
 
-        // Check if the results are empty
         if (store.results.length === 0) {
             store.filterErrorMessage = 'No results found.';
         }
@@ -1067,12 +1056,12 @@ async function applyFilters(): Promise<void> {
 function markAsRelevant(docno: string): void {
     const index = store.results.findIndex(item => item.docno === docno);
     if (index !== -1) {
-        const [item] = store.results.splice(index, 1); // Remove the item
-        store.results.unshift(item); // Add it to the beginning
+        const [item] = store.results.splice(index, 1); 
+        store.results.unshift(item); 
     }
 }
 
 function markAsNotRelevant(docno: string): void {
-    store.results = store.results.filter(item => item.docno !== docno); // Remove the item
+    store.results = store.results.filter(item => item.docno !== docno); 
 }
 </script>

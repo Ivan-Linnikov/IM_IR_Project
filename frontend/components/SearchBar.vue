@@ -3,14 +3,12 @@
         <form ref="searchForm" class="flex items-center w-full bg-white rounded-full shadow-lg p-4 space-x-4"
             @submit.prevent="performSearch">
 
-            <!-- Search Input -->
             <div class="flex items-center space-x-2 flex-1">
                 <Icon icon="mdi:magnify" class="h-5 w-5 text-[#111111]" />
                 <input type="query" v-model="searchQuery" placeholder="Type what you need ..."
                     class="outline-none bg-white text-black placeholder-[#111111] flex-1 min-w-0" required />
             </div>
 
-            <!-- Search Button -->
             <button type="submit"
                 class="bg-black text-white px-8 py-3 rounded-full transition-all duration-300 hover:border hover:border-black hover:bg-white hover:text-[#111111]">
                 Search
@@ -34,7 +32,6 @@ const searchQuery = ref(store.searchQuery);
 const performSearch = async () => {
     store.setSearchData(searchQuery.value);
 
-    // Fetch the results regardless of the page
     await store.fetchResults();
 
     if (router.currentRoute.value.path !== '/result') {
