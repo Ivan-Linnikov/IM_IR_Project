@@ -56468,5 +56468,1019 @@
             "Sunday": "10:00 - 20:00"
         },
         "text": "Name: Renew | Address: Rue de la Poste 20, 1936 Verbier | Categories: Missing"
+    },
+    {
+        "Name": "Fusspflege in Mauren Martina Bchel",
+        "Address": "Bnerstrasse 9, 9493 Mauren, Liechtenstein",
+        "Phone": "Missing",
+        "Email": "Missing",
+        "Categories": [
+            "Beauty salons",
+            "Manicures and pedicures",
+            "Day spa",
+            "Hairdressing and other beauty treatment"
+        ],
+        "Opening Times": {
+            "Monday": "Closed",
+            "Tuesday": "08:30 - 18:00",
+            "Wednesday": "08:30 - 18:00",
+            "Thursday": "08:30 - 18:00",
+            "Friday": "08:30 - 18:00",
+            "Saturday": "08:30 - 18:00",
+            "Sunday": "Closed"
+        },
+        "text": "Name: Fusspflege in Mauren Martina Bchel | Address: Bnerstrasse 9, 9493 Mauren, Liechtenstein | Categories: Beauty salons, Manicures and pedicures, Day spa, Hairdressing and other beauty treatment"
+    },
+    {
+        "Name": "Coiffeur Klaudia",
+        "Address": "Schmiedgasse 3, 9492 Eschen, Liechtenstein",
+        "Phone": "+423 373 09 09",
+        "Email": "klaudia@coiffeurklaudia.li",
+        "Categories": [
+            "Hairdressing and other beauty treatment",
+            "Barbers",
+            "Beauty salons"
+        ],
+        "Opening Times": {
+            "Monday": "Closed",
+            "Tuesday": "08:30 - 18:30",
+            "Wednesday": "08:30 - 18:30",
+            "Thursday": "08:30 - 20:00",
+            "Friday": "08:30 - 18:30",
+            "Saturday": "08:00 - 13:00",
+            "Sunday": "Closed"
+        },
+        "text": "Name: Coiffeur Klaudia | Address: Schmiedgasse 3, 9492 Eschen, Liechtenstein | Categories: Hairdressing and other beauty treatment, Barbers, Beauty salons"
+    },
+    {
+        "Name": "Salon Mano Anstalt",
+        "Address": "Essanestrasse 43, 9492 Eschen, Liechtenstein",
+        "Phone": "+423 373 23 60",
+        "Email": "mail@salon-mano.li",
+        "Categories": [
+            "Beauty salons",
+            "Barbers",
+            "Hairdressing and other beauty treatment"
+        ],
+        "Opening Times": {
+            "Monday": "13:00 - 18:30",
+            "Tuesday": "08:00 - 18:30",
+            "Wednesday": "08:00 - 18:30",
+            "Thursday": "08:00 - 18:30",
+            "Friday": "08:00 - 19:30",
+            "Saturday": "07:30 - 14:00",
+            "Sunday": "Closed"
+        },
+        "text": "Name: Salon Mano Anstalt | Address: Essanestrasse 43, 9492 Eschen, Liechtenstein | Categories: Beauty salons, Barbers, Hairdressing and other beauty treatment"
+    },
+    {
+        "Name": "Sie & Er Coiffure",
+        "Address": "St. Luzi-Strasse 7, 9492 Eschen, Liechtenstein",
+        "Phone": "+423 370 10 31",
+        "Email": "coiffure@intercoiffure.li",
+        "Categories": [
+            "Beauty salons",
+            "Hairdressing and other beauty treatment",
+            "Beauty aids"
+        ],
+        "Opening Times": {
+            "Monday": "Closed",
+            "Tuesday": "08:00 - 18:30",
+            "Wednesday": "08:00 - 18:30",
+            "Thursday": "08:00 - 18:30",
+            "Friday": "08:00 - 20:00",
+            "Saturday": "07:00 - 14:00",
+            "Sunday": "Closed"
+        },
+        "text": "Name: Sie & Er Coiffure | Address: St. Luzi-Strasse 7, 9492 Eschen, Liechtenstein | Categories: Beauty salons, Hairdressing and other beauty treatment, Beauty aids"
+    },
+    {
+        "Name": "Coiffeursalon Studio Haarscharf",
+        "Address": "Hainweg 23, 9492 Eschen, Liechtenstein",
+        "Phone": "+423 373 55 50",
+        "Email": "Missing",
+        "Categories": [
+            "Beauty salons",
+            "Hairdressing and other beauty treatment"
+        ],
+        "Opening Times": {
+            "Monday": "08:30 - 18:00",
+            "Tuesday": "08:30 - 18:00",
+            "Wednesday": "08:30 - 18:00",
+            "Thursday": "08:30 - 18:00",
+            "Friday": "08:30 - 18:00",
+            "Saturday": "08:30 - 18:00",
+            "Sunday": "Closed"
+        },
+        "text": "Name: Coiffeursalon Studio Haarscharf | Address: Hainweg 23, 9492 Eschen, Liechtenstein | Categories: Beauty salons, Hairdressing and other beauty treatment"
+    },
+    {
+        "Name": "estilo libre Hair&Beauty Anstalt",
+        "Address": "Benderer Str. 18, 9494 Schaan, Liechtenstein",
+        "Phone": "+423 232 35 35",
+        "Email": "Missing",
+        "Categories": [
+            "Hairdressing and other beauty treatment",
+            "Beauty salons"
+        ],
+        "Opening Times": {
+            "Monday": "Closed",
+            "Tuesday": "09:00 - 18:30",
+            "Wednesday": "09:00 - 18:30",
+            "Thursday": "09:00 - 18:30",
+            "Friday": "09:00 - 19:00",
+            "Saturday": "08:30 - 14:00",
+            "Sunday": "Closed"
+        },
+        "text": "Name: estilo libre Hair&Beauty Anstalt | Address: Benderer Str. 18, 9494 Schaan, Liechtenstein | Categories: Hairdressing and other beauty treatment, Beauty salons"
+    },
+    {
+        "Name": "Tona-Hairstyle",
+        "Address": "Landstrasse 92, 9495 Triesen, Liechtenstein",
+        "Phone": "+423 392 55 05",
+        "Email": "infotonahairstyle@gmail.com",
+        "Categories": [
+            "Hairdressing and other beauty treatment",
+            "Barbers",
+            "Beauty salons"
+        ],
+        "Opening Times": {
+            "Monday": "Closed",
+            "Tuesday": "08:30 - 18:00",
+            "Wednesday": "08:30 - 18:00",
+            "Thursday": "08:30 - 18:00",
+            "Friday": "08:30 - 18:00",
+            "Saturday": "08:30 - 15:00",
+            "Sunday": "Closed"
+        },
+        "text": "Name: Tona-Hairstyle | Address: Landstrasse 92, 9495 Triesen, Liechtenstein | Categories: Hairdressing and other beauty treatment, Barbers, Beauty salons"
+    },
+    {
+        "Name": "Salon Niedhart - Damen und Herren",
+        "Address": "Landstrasse 58, 9494 Schaan, Liechtenstein",
+        "Phone": "+423 232 13 86",
+        "Email": "info@salon-niedhart.li",
+        "Categories": [
+            "Hairdressing and other beauty treatment",
+            "Beauty salons"
+        ],
+        "Opening Times": {
+            "Opening Hours": "Missing"
+        },
+        "text": "Name: Salon Niedhart - Damen und Herren | Address: Landstrasse 58, 9494 Schaan, Liechtenstein | Categories: Hairdressing and other beauty treatment, Beauty salons"
+    },
+    {
+        "Name": "Salon Astrid",
+        "Address": "Zollstrasse 8, 9494 Schaan, Liechtenstein",
+        "Phone": "+423 232 03 19",
+        "Email": "Missing",
+        "Categories": [
+            "Beauty salons",
+            "Barbers",
+            "Hairdressing and other beauty treatment"
+        ],
+        "Opening Times": {
+            "Monday": "Closed",
+            "Tuesday": "08:30 - 18:00",
+            "Wednesday": "08:30 - 18:00",
+            "Thursday": "08:30 - 18:00",
+            "Friday": "08:30 - 18:00",
+            "Saturday": "08:00 - 14:00",
+            "Sunday": "Closed"
+        },
+        "text": "Name: Salon Astrid | Address: Zollstrasse 8, 9494 Schaan, Liechtenstein | Categories: Beauty salons, Barbers, Hairdressing and other beauty treatment"
+    },
+    {
+        "Name": "Studio Haar-Kult Mauren",
+        "Address": "Frst-Franz-Josefstrasse 2, 9493 Mauren, Liechtenstein",
+        "Phone": "+423 373 13 79",
+        "Email": "Missing",
+        "Categories": [
+            "Beauty salons",
+            "Hairdressing and other beauty treatment"
+        ],
+        "Opening Times": {
+            "Monday": "08:30 - 19:00",
+            "Tuesday": "08:30 - 19:00",
+            "Wednesday": "08:30 - 19:00",
+            "Thursday": "08:30 - 19:00",
+            "Friday": "08:30 - 19:00",
+            "Saturday": "08:00 - 14:00",
+            "Sunday": "Closed"
+        },
+        "text": "Name: Studio Haar-Kult Mauren | Address: Frst-Franz-Josefstrasse 2, 9493 Mauren, Liechtenstein | Categories: Beauty salons, Hairdressing and other beauty treatment"
+    },
+    {
+        "Name": "Coiffeur Les Artistes",
+        "Address": "Peter-Kaiser-Strasse 2, 9493 Mauren, Liechtenstein",
+        "Phone": "+423 373 67 60",
+        "Email": "info@lesartistes.li",
+        "Categories": [
+            "Beauty aids",
+            "Hairdressing and other beauty treatment",
+            "Management consultancy activities",
+            "Beauty salons"
+        ],
+        "Opening Times": {
+            "Monday": "Closed",
+            "Tuesday": "08:30 - 18:00",
+            "Wednesday": "08:30 - 18:00",
+            "Thursday": "08:30 - 18:00",
+            "Friday": "08:30 - 18:00",
+            "Saturday": "07:00 - 14:00",
+            "Sunday": "Closed"
+        },
+        "text": "Name: Coiffeur Les Artistes | Address: Peter-Kaiser-Strasse 2, 9493 Mauren, Liechtenstein | Categories: Beauty aids, Hairdressing and other beauty treatment, Management consultancy activities, Beauty salons"
+    },
+    {
+        "Name": "Coiffure Stile Fabrizio Hairstylist & Haarkosmetik",
+        "Address": "Heiligkreuz 17, 9490 Vaduz, Liechtenstein",
+        "Phone": "+423 230 26 26",
+        "Email": "info@coiffure-fabrizio.li",
+        "Categories": [
+            "Beauty salons",
+            "Hairdressing and other beauty treatment"
+        ],
+        "Opening Times": {
+            "Monday": "Closed",
+            "Tuesday": "08:00 - 18:30",
+            "Wednesday": "08:00 - 18:30",
+            "Thursday": "08:00 - 18:30",
+            "Friday": "08:00 - 18:30",
+            "Saturday": "08:00 - 15:00",
+            "Sunday": "Closed"
+        },
+        "text": "Name: Coiffure Stile Fabrizio Hairstylist & Haarkosmetik | Address: Heiligkreuz 17, 9490 Vaduz, Liechtenstein | Categories: Beauty salons, Hairdressing and other beauty treatment"
+    },
+    {
+        "Name": "GIDOR Coiffure (Vaduz)",
+        "Address": "Landstrasse 117, 9490 Vaduz, Liechtenstein",
+        "Phone": "+423 231 40 04",
+        "Email": "Missing",
+        "Categories": [
+            "Barbers",
+            "Management consultancy activities",
+            "Beauty salons",
+            "Beauty aids",
+            "Hairdressing and other beauty treatment"
+        ],
+        "Opening Times": {
+            "Monday": "09:00 - 19:00",
+            "Tuesday": "09:00 - 19:00",
+            "Wednesday": "09:00 - 19:00",
+            "Thursday": "09:00 - 19:00",
+            "Friday": "09:00 - 19:00",
+            "Saturday": "08:00 - 17:00",
+            "Sunday": "Closed"
+        },
+        "text": "Name: GIDOR Coiffure (Vaduz) | Address: Landstrasse 117, 9490 Vaduz, Liechtenstein | Categories: Barbers, Management consultancy activities, Beauty salons, Beauty aids, Hairdressing and other beauty treatment"
+    },
+    {
+        "Name": "A. Kerhart, Coiffeur Headroom",
+        "Address": "Poststrasse 15, 9494 Schaan, Liechtenstein",
+        "Phone": "+423 230 03 23",
+        "Email": "Missing",
+        "Categories": [
+            "Hairdressing and other beauty treatment",
+            "Beauty salons"
+        ],
+        "Opening Times": {
+            "Monday": "Closed",
+            "Tuesday": "09:00 - 18:00",
+            "Wednesday": "09:00 - 18:00",
+            "Thursday": "09:00 - 18:00",
+            "Friday": "09:00 - 18:00",
+            "Saturday": "08:00 - 13:00",
+            "Sunday": "Closed"
+        },
+        "text": "Name: A. Kerhart, Coiffeur Headroom | Address: Poststrasse 15, 9494 Schaan, Liechtenstein | Categories: Hairdressing and other beauty treatment, Beauty salons"
+    },
+    {
+        "Name": "haarlocke - Frisuren & mehr.",
+        "Address": "Lavadinastrasse 85, 9497 Triesenberg, Liechtenstein",
+        "Phone": "+423 791 06 30",
+        "Email": "Missing",
+        "Categories": [
+            "Hairdressing and other beauty treatment",
+            "Barbers"
+        ],
+        "Opening Times": {
+            "Monday": "09:00 - 20:00",
+            "Tuesday": "09:00 - 20:00",
+            "Wednesday": "09:00 - 20:00",
+            "Thursday": "09:00 - 20:00",
+            "Friday": "09:00 - 20:00",
+            "Saturday": "Closed",
+            "Sunday": "Closed"
+        },
+        "text": "Name: haarlocke - Frisuren & mehr. | Address: Lavadinastrasse 85, 9497 Triesenberg, Liechtenstein | Categories: Hairdressing and other beauty treatment, Barbers"
+    },
+    {
+        "Name": "Top Hair",
+        "Address": "Werleweg 5, 9491 Ruggell, Liechtenstein",
+        "Phone": "+423 373 66 66",
+        "Email": "Missing",
+        "Categories": [
+            "Hairdressing and other beauty treatment",
+            "Pharmacies and drug stores",
+            "Retail trade, except of motor vehicles and motorcycles",
+            "Beauty salons"
+        ],
+        "Opening Times": {
+            "Monday": "Closed",
+            "Tuesday": "08:00 - 17:00",
+            "Wednesday": "Closed",
+            "Thursday": "08:00 - 17:00",
+            "Friday": "Closed",
+            "Saturday": "Closed",
+            "Sunday": "Closed"
+        },
+        "text": "Name: Top Hair | Address: Werleweg 5, 9491 Ruggell, Liechtenstein | Categories: Hairdressing and other beauty treatment, Pharmacies and drug stores, Retail trade, except of motor vehicles and motorcycles, Beauty salons"
+    },
+    {
+        "Name": "Secrets of Beauty Est.",
+        "Address": "Eschner Strasse 51, 9487 Gamprin, Liechtenstein",
+        "Phone": "+423 373 94 91",
+        "Email": "info@sob.li",
+        "Categories": [
+            "Pharmacies and drug stores",
+            "Medical clinic",
+            "Beauty salons",
+            "Hairdressing and other beauty treatment",
+            "Day spa"
+        ],
+        "Opening Times": {
+            "Monday": "09:30 - 18:30",
+            "Tuesday": "09:30 - 18:30",
+            "Wednesday": "09:30 - 18:30",
+            "Thursday": "09:30 - 18:30",
+            "Friday": "09:00 - 18:00",
+            "Saturday": "09:30 - 15:00",
+            "Sunday": "Closed"
+        },
+        "text": "Name: Secrets of Beauty Est. | Address: Eschner Strasse 51, 9487 Gamprin, Liechtenstein | Categories: Pharmacies and drug stores, Medical clinic, Beauty salons, Hairdressing and other beauty treatment, Day spa"
+    },
+    {
+        "Name": "BIG Coiffeur",
+        "Address": "Landstrasse 121, 9495 Triesen, Liechtenstein",
+        "Phone": "+423 392 27 24",
+        "Email": "Missing",
+        "Categories": [
+            "Beauty salons",
+            "Hairdressing and other beauty treatment"
+        ],
+        "Opening Times": {
+            "Monday": "Closed",
+            "Tuesday": "08:00 - 18:30",
+            "Wednesday": "08:00 - 18:30",
+            "Thursday": "08:00 - 18:30",
+            "Friday": "08:00 - 18:30",
+            "Saturday": "08:00 - 11:00",
+            "Sunday": "Closed"
+        },
+        "text": "Name: BIG Coiffeur | Address: Landstrasse 121, 9495 Triesen, Liechtenstein | Categories: Beauty salons, Hairdressing and other beauty treatment"
+    },
+    {
+        "Name": "Coiffeursalon Herrensalon Vincenzo",
+        "Address": "Herrengasse 1 A, 9490 Vaduz, Liechtenstein",
+        "Phone": "+423 232 45 26",
+        "Email": "Missing",
+        "Categories": [
+            "Hairdressing and other beauty treatment",
+            "Beauty salons"
+        ],
+        "Opening Times": {
+            "Monday": "08:30 - 18:00",
+            "Tuesday": "08:30 - 18:00",
+            "Wednesday": "08:30 - 18:00",
+            "Thursday": "08:30 - 18:00",
+            "Friday": "08:30 - 18:00",
+            "Saturday": "Closed",
+            "Sunday": "Closed"
+        },
+        "text": "Name: Coiffeursalon Herrensalon Vincenzo | Address: Herrengasse 1 A, 9490 Vaduz, Liechtenstein | Categories: Hairdressing and other beauty treatment, Beauty salons"
+    },
+    {
+        "Name": "A. Kerhart, Coiffeur Headroom",
+        "Address": "Landstrasse 89, 9490 Vaduz, Liechtenstein",
+        "Phone": "+423 230 03 23",
+        "Email": "Missing",
+        "Categories": [
+            "Hairdressing and other beauty treatment",
+            "Beauty salons"
+        ],
+        "Opening Times": {
+            "Monday": "09:00 - 18:00",
+            "Tuesday": "09:00 - 18:00",
+            "Wednesday": "09:00 - 18:00",
+            "Thursday": "09:00 - 18:00",
+            "Friday": "09:00 - 18:00",
+            "Saturday": "08:00 - 13:00",
+            "Sunday": "Closed"
+        },
+        "text": "Name: A. Kerhart, Coiffeur Headroom | Address: Landstrasse 89, 9490 Vaduz, Liechtenstein | Categories: Hairdressing and other beauty treatment, Beauty salons"
+    },
+    {
+        "Name": "Hernd Schr",
+        "Address": "Bnerstrasse 87, 9493 Mauren FL, Liechtenstein",
+        "Phone": "+423 373 93 23",
+        "Email": "Missing",
+        "Categories": [
+            "Hairdressing and other beauty treatment",
+            "Beauty salons"
+        ],
+        "Opening Times": {
+            "Monday": "Closed",
+            "Tuesday": "08:30 - 18:00",
+            "Wednesday": "08:30 - 18:00",
+            "Thursday": "Closed",
+            "Friday": "08:30 - 18:00",
+            "Saturday": "08:30 - 18:00",
+            "Sunday": "Closed"
+        },
+        "text": "Name: Hernd Schr | Address: Bnerstrasse 87, 9493 Mauren FL, Liechtenstein | Categories: Hairdressing and other beauty treatment, Beauty salons"
+    },
+    {
+        "Name": "Coiffeursalon EM",
+        "Address": "Grosser Bongert 20, 9495 Triesen, Liechtenstein",
+        "Phone": "+423 392 34 21",
+        "Email": "Missing",
+        "Categories": [
+            "Beauty salons",
+            "Hairdressing and other beauty treatment"
+        ],
+        "Opening Times": {
+            "Opening Hours": "Missing"
+        },
+        "text": "Name: Coiffeursalon EM | Address: Grosser Bongert 20, 9495 Triesen, Liechtenstein | Categories: Beauty salons, Hairdressing and other beauty treatment"
+    },
+    {
+        "Name": "Mrs. Beatrice Wst Fusspflegesalon",
+        "Address": "Kesse 31, 9488 Schellenberg, Liechtenstein",
+        "Phone": "+423 373 45 43",
+        "Email": "Missing",
+        "Categories": [
+            "Day spa",
+            "Beauty salons",
+            "Hairdressing and other beauty treatment",
+            "Manicures and pedicures"
+        ],
+        "Opening Times": {
+            "Opening Hours": "Missing"
+        },
+        "text": "Name: Mrs. Beatrice Wst Fusspflegesalon | Address: Kesse 31, 9488 Schellenberg, Liechtenstein | Categories: Day spa, Beauty salons, Hairdressing and other beauty treatment, Manicures and pedicures"
+    },
+    {
+        "Name": "Coiffeursalon d'Arte",
+        "Address": "Landstrasse 89, 9494 Schaan, Liechtenstein",
+        "Phone": "+423 233 20 44",
+        "Email": "Missing",
+        "Categories": [
+            "Beauty salons",
+            "Hairdressing and other beauty treatment"
+        ],
+        "Opening Times": {
+            "Monday": "Closed",
+            "Tuesday": "08:30 - 18:00",
+            "Wednesday": "08:30 - 18:00",
+            "Thursday": "08:30 - 18:00",
+            "Friday": "08:30 - 18:00",
+            "Saturday": "08:30 - 18:00",
+            "Sunday": "Closed"
+        },
+        "text": "Name: Coiffeursalon d'Arte | Address: Landstrasse 89, 9494 Schaan, Liechtenstein | Categories: Beauty salons, Hairdressing and other beauty treatment"
+    },
+    {
+        "Name": "Coiffeursalon M. Gaube",
+        "Address": "Landstrasse 149, 9494 Schaan, Liechtenstein",
+        "Phone": "+423 232 03 32",
+        "Email": "Missing",
+        "Categories": [
+            "Beauty salons",
+            "Hairdressing and other beauty treatment"
+        ],
+        "Opening Times": {
+            "Opening Hours": "Missing"
+        },
+        "text": "Name: Coiffeursalon M. Gaube | Address: Landstrasse 149, 9494 Schaan, Liechtenstein | Categories: Beauty salons, Hairdressing and other beauty treatment"
+    },
+    {
+        "Name": "Coiffeursalon M. Gaube",
+        "Address": "Landstrasse 149, 9494 Schaan, Liechtenstein",
+        "Phone": "+423 232 03 32",
+        "Email": "Missing",
+        "Categories": [
+            "Beauty salons",
+            "Hairdressing and other beauty treatment"
+        ],
+        "Opening Times": {
+            "Monday": "Closed",
+            "Tuesday": "08:30 - 18:00",
+            "Wednesday": "08:30 - 18:00",
+            "Thursday": "08:30 - 18:00",
+            "Friday": "Closed",
+            "Saturday": "Closed",
+            "Sunday": "Closed"
+        },
+        "text": "Name: Coiffeursalon M. Gaube | Address: Landstrasse 149, 9494 Schaan, Liechtenstein | Categories: Beauty salons, Hairdressing and other beauty treatment"
+    },
+    {
+        "Name": "Coiffure zur Schmiede",
+        "Address": "Gufer 29, 9497 Triesenberg, Liechtenstein",
+        "Phone": "+423 262 93 11",
+        "Email": "Missing",
+        "Categories": [
+            "Beauty salons",
+            "Hairdressing and other beauty treatment"
+        ],
+        "Opening Times": {
+            "Monday": "Closed",
+            "Tuesday": "08:30 - 18:00",
+            "Wednesday": "08:30 - 18:00",
+            "Thursday": "Closed",
+            "Friday": "08:00 - 19:00",
+            "Saturday": "07:30 - 13:00",
+            "Sunday": "Closed"
+        },
+        "text": "Name: Coiffure zur Schmiede | Address: Gufer 29, 9497 Triesenberg, Liechtenstein | Categories: Beauty salons, Hairdressing and other beauty treatment"
+    },
+    {
+        "Name": "Salon Liz",
+        "Address": "Landstrasse 17, 9494 Schaan, Liechtenstein",
+        "Phone": "+423 232 18 55",
+        "Email": "Missing",
+        "Categories": [
+            "Hairdressing and other beauty treatment",
+            "Day spa",
+            "Beauty salons"
+        ],
+        "Opening Times": {
+            "Monday": "Closed",
+            "Tuesday": "08:30 - 18:00",
+            "Wednesday": "08:30 - 18:00",
+            "Thursday": "08:30 - 18:00",
+            "Friday": "08:30 - 18:00",
+            "Saturday": "08:30 - 18:00",
+            "Sunday": "Closed"
+        },
+        "text": "Name: Salon Liz | Address: Landstrasse 17, 9494 Schaan, Liechtenstein | Categories: Hairdressing and other beauty treatment, Day spa, Beauty salons"
+    },
+    {
+        "Name": "Erikas-Fusspflegepraxis",
+        "Address": "Oberbhl 98, 9487, Liechtenstein",
+        "Phone": "Missing",
+        "Email": "Missing",
+        "Categories": [
+            "Day spa",
+            "Beauty salons",
+            "Hairdressing and other beauty treatment",
+            "Manicures and pedicures"
+        ],
+        "Opening Times": {
+            "Opening Hours": "Missing"
+        },
+        "text": "Name: Erikas-Fusspflegepraxis | Address: Oberbhl 98, 9487, Liechtenstein | Categories: Day spa, Beauty salons, Hairdressing and other beauty treatment, Manicures and pedicures"
+    },
+    {
+        "Name": "Designerama Hair Sabrina Malin",
+        "Address": "Landstrasse 121, 9495 Triesen, Liechtenstein",
+        "Phone": "Missing",
+        "Email": "Missing",
+        "Categories": [
+            "Hairdressing and other beauty treatment"
+        ],
+        "Opening Times": {
+            "Monday": "Closed",
+            "Tuesday": "08:30 - 18:00",
+            "Wednesday": "08:30 - 18:00",
+            "Thursday": "08:30 - 18:00",
+            "Friday": "08:30 - 18:00",
+            "Saturday": "Closed",
+            "Sunday": "Closed"
+        },
+        "text": "Name: Designerama Hair Sabrina Malin | Address: Landstrasse 121, 9495 Triesen, Liechtenstein | Categories: Hairdressing and other beauty treatment"
+    },
+    {
+        "Name": "Pakos Barbershop",
+        "Address": "Bahnhofstrasse 1, 9494 Schaan, Liechtenstein",
+        "Phone": "+423 230 01 06",
+        "Email": "Missing",
+        "Categories": [
+            "Barbers"
+        ],
+        "Opening Times": {
+            "Monday": "Closed",
+            "Tuesday": "08:30 - 18:00",
+            "Wednesday": "08:30 - 18:00",
+            "Thursday": "08:30 - 18:00",
+            "Friday": "08:30 - 18:00",
+            "Saturday": "09:00 - 14:00",
+            "Sunday": "Closed"
+        },
+        "text": "Name: Pakos Barbershop | Address: Bahnhofstrasse 1, 9494 Schaan, Liechtenstein | Categories: Barbers"
+    },
+    {
+        "Name": "Haarzentrum Lett",
+        "Address": "Lettstrasse 12, 9490 Vaduz, Liechtenstein",
+        "Phone": "+423 232 22 53",
+        "Email": "Missing",
+        "Categories": [
+            "Beauty salons",
+            "Hairdressing and other beauty treatment"
+        ],
+        "Opening Times": {
+            "Monday": "Closed",
+            "Tuesday": "08:00 - 18:30",
+            "Wednesday": "08:00 - 18:30",
+            "Thursday": "08:00 - 18:30",
+            "Friday": "08:30 - 18:00",
+            "Saturday": "08:00 - 14:00",
+            "Sunday": "Closed"
+        },
+        "text": "Name: Haarzentrum Lett | Address: Lettstrasse 12, 9490 Vaduz, Liechtenstein | Categories: Beauty salons, Hairdressing and other beauty treatment"
+    },
+    {
+        "Name": "Coiffeur zur Schmiede",
+        "Address": "Wangerbergstrasse 11, 9497 Triesenberg, Liechtenstein",
+        "Phone": "+423 262 93 11",
+        "Email": "Missing",
+        "Categories": [
+            "Management consultancy activities",
+            "Beauty salons",
+            "Barbers"
+        ],
+        "Opening Times": {
+            "Monday": "Closed",
+            "Tuesday": "08:30 - 18:00",
+            "Wednesday": "08:30 - 18:00",
+            "Thursday": "08:30 - 18:00",
+            "Friday": "08:00 - 19:00",
+            "Saturday": "07:30 - 13:00",
+            "Sunday": "Closed"
+        },
+        "text": "Name: Coiffeur zur Schmiede | Address: Wangerbergstrasse 11, 9497 Triesenberg, Liechtenstein | Categories: Management consultancy activities, Beauty salons, Barbers"
+    },
+    {
+        "Name": "Coiffeur Magic",
+        "Address": "Im Rsle 2, 9494 Schaan, Liechtenstein",
+        "Phone": "+423 373 53 78",
+        "Email": "Missing",
+        "Categories": [
+            "Beauty salons",
+            "Hairdressing and other beauty treatment"
+        ],
+        "Opening Times": {
+            "Monday": "08:30 - 18:30",
+            "Tuesday": "08:30 - 18:30",
+            "Wednesday": "08:30 - 18:30",
+            "Thursday": "08:30 - 18:30",
+            "Friday": "08:30 - 18:30",
+            "Saturday": "09:00 - 17:00",
+            "Sunday": "Closed"
+        },
+        "text": "Name: Coiffeur Magic | Address: Im Rsle 2, 9494 Schaan, Liechtenstein | Categories: Beauty salons, Hairdressing and other beauty treatment"
+    },
+    {
+        "Name": "Skinminded Laser Clinics",
+        "Address": "Poststrasse 48A, 9494 Schaan, Liechtenstein",
+        "Phone": "+423 230 00 50",
+        "Email": "Missing",
+        "Categories": [
+            "Medical and dental practice activities",
+            "Hairdressing and other beauty treatment"
+        ],
+        "Opening Times": {
+            "Monday": "09:00 - 18:00",
+            "Tuesday": "09:00 - 18:00",
+            "Wednesday": "09:00 - 18:00",
+            "Thursday": "09:00 - 18:00",
+            "Friday": "09:00 - 18:00",
+            "Saturday": "11:00 - 18:00",
+            "Sunday": "Closed"
+        },
+        "text": "Name: Skinminded Laser Clinics | Address: Poststrasse 48A, 9494 Schaan, Liechtenstein | Categories: Medical and dental practice activities, Hairdressing and other beauty treatment"
+    },
+    {
+        "Name": "123haarfrei.jetzt",
+        "Address": "Mhleweg 10, 9490 Vaduz, Switzerland",
+        "Phone": "Missing",
+        "Email": "Missing",
+        "Categories": [
+            "Hairdressing and other beauty treatment"
+        ],
+        "Opening Times": {
+            "Opening Hours": "Missing"
+        },
+        "text": "Name: 123haarfrei.jetzt | Address: Mhleweg 10, 9490 Vaduz, Switzerland | Categories: Hairdressing and other beauty treatment"
+    },
+    {
+        "Name": "Birgit",
+        "Address": "Frst-Franz-Josef-Strasse 68, 9490 Vaduz, Liechtenstein",
+        "Phone": "+423 232 89 66",
+        "Email": "Missing",
+        "Categories": [
+            "Hairdressing and other beauty treatment",
+            "Beauty salons"
+        ],
+        "Opening Times": {
+            "Monday": "Closed",
+            "Tuesday": "08:30 - 18:00",
+            "Wednesday": "08:30 - 18:00",
+            "Thursday": "08:30 - 18:00",
+            "Friday": "08:30 - 18:00",
+            "Saturday": "08:30 - 18:00",
+            "Sunday": "Closed"
+        },
+        "text": "Name: Birgit | Address: Frst-Franz-Josef-Strasse 68, 9490 Vaduz, Liechtenstein | Categories: Hairdressing and other beauty treatment, Beauty salons"
+    },
+    {
+        "Name": "Hair and Body",
+        "Address": "Missing",
+        "Phone": "Missing",
+        "Email": "Missing",
+        "Categories": [
+            "Beauty salons",
+            "Hairdressing and other beauty treatment"
+        ],
+        "Opening Times": {
+            "Monday": "Closed",
+            "Tuesday": "08:30 - 18:00",
+            "Wednesday": "08:30 - 18:00",
+            "Thursday": "08:30 - 18:00",
+            "Friday": "08:30 - 18:00",
+            "Saturday": "08:30 - 18:00",
+            "Sunday": "Closed"
+        },
+        "text": "Name: Hair and Body | Address: Missing | Categories: Beauty salons, Hairdressing and other beauty treatment"
+    },
+    {
+        "Name": "Coiffeur Andrea",
+        "Address": "Sgenstrasse 11, 9486 Schaanwald, Liechtenstein",
+        "Phone": "+423 370 28 88",
+        "Email": "Missing",
+        "Categories": [
+            "Beauty salons",
+            "Hairdressing and other beauty treatment"
+        ],
+        "Opening Times": {
+            "Monday": "08:30 - 18:00",
+            "Tuesday": "08:30 - 18:00",
+            "Wednesday": "08:30 - 18:00",
+            "Thursday": "08:30 - 18:00",
+            "Friday": "08:30 - 18:00",
+            "Saturday": "Closed",
+            "Sunday": "Closed"
+        },
+        "text": "Name: Coiffeur Andrea | Address: Sgenstrasse 11, 9486 Schaanwald, Liechtenstein | Categories: Beauty salons, Hairdressing and other beauty treatment"
+    },
+    {
+        "Name": "Mrs. Gerda Elkuch Fusspflegesalon",
+        "Address": "Spidach 7, 9491 Ruggell, Liechtenstein",
+        "Phone": "+423 373 58 76",
+        "Email": "Missing",
+        "Categories": [
+            "Hairdressing and other beauty treatment",
+            "Day spa",
+            "Manicures and pedicures",
+            "Beauty salons"
+        ],
+        "Opening Times": {
+            "Monday": "08:30 - 18:00",
+            "Tuesday": "08:30 - 18:00",
+            "Wednesday": "08:30 - 18:00",
+            "Thursday": "08:30 - 18:00",
+            "Friday": "Closed",
+            "Saturday": "Closed",
+            "Sunday": "Closed"
+        },
+        "text": "Name: Mrs. Gerda Elkuch Fusspflegesalon | Address: Spidach 7, 9491 Ruggell, Liechtenstein | Categories: Hairdressing and other beauty treatment, Day spa, Manicures and pedicures, Beauty salons"
+    },
+    {
+        "Name": "Adventure Coiffeur Manuela",
+        "Address": "Landstrasse 342, 9495 Triesen, Liechtenstein",
+        "Phone": "+423 392 60 60",
+        "Email": "Missing",
+        "Categories": [
+            "Hairdressing and other beauty treatment",
+            "Beauty salons"
+        ],
+        "Opening Times": {
+            "Monday": "08:30 - 18:00",
+            "Tuesday": "08:30 - 18:00",
+            "Wednesday": "08:30 - 18:00",
+            "Thursday": "08:30 - 18:00",
+            "Friday": "08:30 - 18:00",
+            "Saturday": "Closed",
+            "Sunday": "Closed"
+        },
+        "text": "Name: Adventure Coiffeur Manuela | Address: Landstrasse 342, 9495 Triesen, Liechtenstein | Categories: Hairdressing and other beauty treatment, Beauty salons"
+    },
+    {
+        "Name": "Corina",
+        "Address": "Landstrasse 57, 9494 Schaan, Liechtenstein",
+        "Phone": "+423 232 80 85",
+        "Email": "Missing",
+        "Categories": [
+            "Beauty salons",
+            "Hairdressing and other beauty treatment",
+            "Day spa",
+            "Manicures and pedicures"
+        ],
+        "Opening Times": {
+            "Monday": "08:30 - 18:00",
+            "Tuesday": "08:30 - 18:00",
+            "Wednesday": "08:30 - 18:00",
+            "Thursday": "08:30 - 18:00",
+            "Friday": "08:30 - 18:00",
+            "Saturday": "08:30 - 18:00",
+            "Sunday": "Closed"
+        },
+        "text": "Name: Corina | Address: Landstrasse 57, 9494 Schaan, Liechtenstein | Categories: Beauty salons, Hairdressing and other beauty treatment, Day spa, Manicures and pedicures"
+    },
+    {
+        "Name": "Haarzentrum Lett",
+        "Address": "Lettstrasse 12, 9490 Vaduz, Liechtenstein",
+        "Phone": "+423 232 16 15",
+        "Email": "haarzentrum@powersurf.li",
+        "Categories": [
+            "Beauty salons",
+            "Barbers"
+        ],
+        "Opening Times": {
+            "Monday": "Closed",
+            "Tuesday": "08:00 - 18:30",
+            "Wednesday": "08:00 - 18:30",
+            "Thursday": "08:00 - 18:30",
+            "Friday": "08:30 - 18:00",
+            "Saturday": "08:00 - 14:00",
+            "Sunday": "Closed"
+        },
+        "text": "Name: Haarzentrum Lett | Address: Lettstrasse 12, 9490 Vaduz, Liechtenstein | Categories: Beauty salons, Barbers"
+    },
+    {
+        "Name": "Kristina Sprenger Visagistin",
+        "Address": "Dorfstrasse 34, 9495 Triesen, Switzerland",
+        "Phone": "Missing",
+        "Email": "Missing",
+        "Categories": [
+            "Other personal service activities n.e.c.",
+            "Hairdressing and other beauty treatment"
+        ],
+        "Opening Times": {
+            "Monday": "Closed",
+            "Tuesday": "08:00 - 18:00",
+            "Wednesday": "08:00 - 18:00",
+            "Thursday": "08:00 - 18:00",
+            "Friday": "08:00 - 18:00",
+            "Saturday": "09:00 - 14:00",
+            "Sunday": "Closed"
+        },
+        "text": "Name: Kristina Sprenger Visagistin | Address: Dorfstrasse 34, 9495 Triesen, Switzerland | Categories: Other personal service activities n.e.c., Hairdressing and other beauty treatment"
+    },
+    {
+        "Name": "Varga Hair International AG",
+        "Address": "Herrengasse 11, 9490 Vaduz, Liechtenstein",
+        "Phone": "+423 232 94 20",
+        "Email": "Missing",
+        "Categories": [
+            "Hairdressing and other beauty treatment",
+            "Beauty aids"
+        ],
+        "Opening Times": {
+            "Monday": "08:30 - 18:00",
+            "Tuesday": "08:30 - 18:00",
+            "Wednesday": "08:30 - 18:00",
+            "Thursday": "08:30 - 18:00",
+            "Friday": "08:30 - 18:00",
+            "Saturday": "08:30 - 18:00",
+            "Sunday": "Closed"
+        },
+        "text": "Name: Varga Hair International AG | Address: Herrengasse 11, 9490 Vaduz, Liechtenstein | Categories: Hairdressing and other beauty treatment, Beauty aids"
+    },
+    {
+        "Name": "Mrs. Corinna Chesi Coiffeursalon",
+        "Address": "Meierhofstrasse 43, 9490 Vaduz, Liechtenstein",
+        "Phone": "+423 232 57 66",
+        "Email": "Missing",
+        "Categories": [
+            "Hairdressing and other beauty treatment",
+            "Pharmacies and drug stores"
+        ],
+        "Opening Times": {
+            "Monday": "Closed",
+            "Tuesday": "08:00 - 14:00",
+            "Wednesday": "08:00 - 14:00",
+            "Thursday": "08:00 - 14:00",
+            "Friday": "08:00 - 14:00",
+            "Saturday": "Closed",
+            "Sunday": "Closed"
+        },
+        "text": "Name: Mrs. Corinna Chesi Coiffeursalon | Address: Meierhofstrasse 43, 9490 Vaduz, Liechtenstein | Categories: Hairdressing and other beauty treatment, Pharmacies and drug stores"
+    },
+    {
+        "Name": "Viva-Balance",
+        "Address": "St. Luzi-Strasse 22, 9492 Eschen, Liechtenstein",
+        "Phone": "Missing",
+        "Email": "Missing",
+        "Categories": [
+            "Hairdressing and other beauty treatment",
+            "Beauty salons"
+        ],
+        "Opening Times": {
+            "Monday": "Closed",
+            "Tuesday": "09:00 - 18:00",
+            "Wednesday": "13:30 - 18:00",
+            "Thursday": "09:00 - 13:00",
+            "Friday": "09:00 - 18:00",
+            "Saturday": "08:00 - 13:00",
+            "Sunday": "Closed"
+        },
+        "text": "Name: Viva-Balance | Address: St. Luzi-Strasse 22, 9492 Eschen, Liechtenstein | Categories: Hairdressing and other beauty treatment, Beauty salons"
+    },
+    {
+        "Name": "Coiffeursalon Brigitte",
+        "Address": "Landstrasse 114, 9495 Triesen, Liechtenstein",
+        "Phone": "Missing",
+        "Email": "Missing",
+        "Categories": [
+            "Beauty salons",
+            "Hairdressing and other beauty treatment",
+            "Barbers"
+        ],
+        "Opening Times": {
+            "Monday": "Closed",
+            "Tuesday": "08:00 - 14:00",
+            "Wednesday": "08:00 - 14:00",
+            "Thursday": "08:00 - 14:00",
+            "Friday": "09:00 - 18:00",
+            "Saturday": "08:00 - 14:00",
+            "Sunday": "Closed"
+        },
+        "text": "Name: Coiffeursalon Brigitte | Address: Landstrasse 114, 9495 Triesen, Liechtenstein | Categories: Beauty salons, Hairdressing and other beauty treatment, Barbers"
+    },
+    {
+        "Name": "Coiffeur Emozioni",
+        "Address": "Landstrasse 168, 9494 Schaan, Liechtenstein",
+        "Phone": "Missing",
+        "Email": "Missing",
+        "Categories": [
+            "Beauty salons",
+            "Hairdressing and other beauty treatment"
+        ],
+        "Opening Times": {
+            "Monday": "Closed",
+            "Tuesday": "08:00 - 18:00",
+            "Wednesday": "08:00 - 18:00",
+            "Thursday": "08:00 - 18:00",
+            "Friday": "08:00 - 18:00",
+            "Saturday": "08:00 - 13:00",
+            "Sunday": "Closed"
+        },
+        "text": "Name: Coiffeur Emozioni | Address: Landstrasse 168, 9494 Schaan, Liechtenstein | Categories: Beauty salons, Hairdressing and other beauty treatment"
+    },
+    {
+        "Name": "Abitudini di donna",
+        "Address": "Via Antonio Bezzola 222061 Campione d'Italia",
+        "Phone": "091 649 90 33",
+        "Email": "Missing",
+        "Categories": [
+            "Unique Colors",
+            "Modern and Classic Women's Haircuts",
+            "Glamorous Folds",
+            "Bridal Hairstyles",
+            "Anti-Dandruff Treatments",
+            "Reconstructive Treatments",
+            "Keratin Treatments",
+            "Lamination"
+        ],
+        "Opening Times": {
+            "Monday": "Closed",
+            "Tuesday": "09:00 - 17:00",
+            "Wednesday": "09:00 - 17:00",
+            "Thursday": "09:00 - 17:00",
+            "Friday": "09:00 - 17:00",
+            "Saturday": "09:00 - 17:00",
+            "Sunday": "Closed"
+        },
+        "text": "Name: Abitudini di donna | Address: Via Antonio Bezzola 222061 Campione d'Italia | Categories: Unique Colors, Modern and Classic Women's Haircuts, Glamorous Folds, Bridal Hairstyles, Anti-Dandruff Treatments, Reconstructive Treatments, Keratin Treatments, Lamination"
+    },
+    {
+        "Name": "Compagnia della bellezza",
+        "Address": "Corso Italia 422061 Campione d'Italia",
+        "Phone": "091 649 63 61",
+        "Email": "Missing",
+        "Categories": [
+            "Hairdresser"
+        ],
+        "Opening Times": {
+            "Monday": "Closed",
+            "Tuesday": "08:00 - 12:00 / 13:30 - 18:00",
+            "Wednesday": "08:00 - 12:00 / 13:30 - 18:00",
+            "Thursday": "08:00 - 12:00 / 13:30 - 18:00",
+            "Friday": "08:00 - 12:00 / 13:30 - 18:00",
+            "Saturday": "08:00 - 12:00 / 13:30 - 18:00",
+            "Sunday": "Closed"
+        },
+        "text": "Name: Compagnia della bellezza | Address: Corso Italia 422061 Campione d'Italia | Categories: Hairdresser"
     }
 ]
