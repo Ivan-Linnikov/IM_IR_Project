@@ -17,8 +17,11 @@ export default defineNuxtConfig({
       apiBaseUrl: 'http://localhost:8000'
     }
   },
-  modules: ["@nuxtjs/google-fonts", "@pinia/nuxt" ],
-
+  modules: [
+    "@nuxtjs/google-fonts", 
+    "@pinia/nuxt", 
+    'pinia-plugin-persistedstate/nuxt'
+  ],
   css: [
     '/styles/normalize.css',
     '/styles/global.css'

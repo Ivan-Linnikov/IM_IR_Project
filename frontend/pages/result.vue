@@ -72,7 +72,8 @@
             </div>
         </div>
         <div v-if="!store.isLoading && !store.errorMessage" class="grid grid-cols-2 gap-10 mt-20 items-start">
-            <Card v-for="item in store.results" :key="item.docno" :item="item" />
+            <Card v-for="item in store.results" :key="item.docno" :item="item" @mark-relevant="markAsRelevant"
+                @mark-not-relevant="markAsNotRelevant" />
         </div>
 
     </div>
@@ -142,7 +143,7 @@ async function applyFilters(): Promise<void> {
     try {
         store.isLoading = true;
         store.errorMessage = '';
-        
+
         const response = await $fetch('http://localhost:8000/result', {
             method: 'POST',
             body: filters,
@@ -156,5 +157,17 @@ async function applyFilters(): Promise<void> {
     } finally {
         store.isLoading = false;
     }
+}
+
+function markAsRelevant(docno: string): void {
+    const index = store.results.findIndex(item => item.docno === docno);
+    if (index !== -1) {
+        const [item] = store.results.splice(index, 1); // Remove the item
+        store.results.unshift(item); // Add it to the beginning
+    }
+}
+
+function markAsNotRelevant(docno: string): void {
+    store.results = store.results.filter(item => item.docno !== docno); // Remove the item
 }
 </script>
