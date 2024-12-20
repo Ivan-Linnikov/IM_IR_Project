@@ -14,8 +14,7 @@ def search(query_data: QueryModel):
     """
     This endpoint accepts a query and returns relevant documents.
     """
-    query = query_data.query  # Extract the query from the request
+    query = query_data.query
     print(query)
     results = search_documents(query)
-    print(results)# Call the search logic from retrieval.py
     return results

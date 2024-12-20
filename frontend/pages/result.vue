@@ -1,89 +1,160 @@
 <template>
-    <div class="bg-[#f1f1f1] bg-cover min-h-screen p-10 font-raleway">
-        <div class="flex justify-center">
-            <div class="flex flex-row max-w-6xl pl-4">
-                <NuxtLink to="/">
-                    <h1 class="font-oswald text-4xl text-[#111111] font-normal pl-4">Find Beauty</h1>
-                </NuxtLink>
-                <SearchBar />
+    <div class="bg-[#f1f1f1] bg-cover min-h-screen font-raleway p-10">
+        <!-- Title and Search Bar -->
+        <div class="flex flex-column items-center w-full">
+            <!-- Title on the very left of the page -->
+            <NuxtLink to="/" class="pl-0">
+                <h1 class="font-oswald text-4xl text-[#111111] font-normal">Find Beauty</h1>
+            </NuxtLink>
+            <!-- Centered Search Bar -->
+            <div class="flex-grow flex justify-center">
+                <SearchBar class="w-full max-w-6xl" />
             </div>
         </div>
 
-        <!-- Loading State -->
-        <div v-if="isLoading" class="flex justify-center items-center mt-20">
-            <p class="text-xl font-bold">Loading results...</p>
+
+        <!-- Filter Section -->
+        <div class="flex justify-center mt-8">
+            <div class="flex items-end justify-center w-full max-w-6xl space-x-4">
+
+                <!-- City Select -->
+                <div class="w-1/3 relative">
+                    <label for="city" class="block text-sm font-medium text-[#111111] mb-2">City</label>
+                    <div class="flex items-center w-full bg-white rounded-full shadow-lg p-3 space-x-2">
+                        <input type="text" v-model="cityInput" @input="filterCities" @focus="showCityOptions = true"
+                            @blur="hideOptions" id="city" placeholder="Type or select a city"
+                            class="outline-none bg-white text-[#111111] placeholder-[#111111] flex-1 min-w-0" />
+                    </div>
+                    <ul v-if="showCityOptions && filteredCities.length"
+                        class="absolute z-10 bg-white shadow-lg rounded-lg mt-2 max-h-40 overflow-y-auto w-full">
+                        <li v-for="(city, index) in filteredCities" :key="index" @mousedown="selectCity(city)"
+                            class="p-4 text-[#111111] hover:bg-black hover:text-white cursor-pointer">
+                            {{ city }}
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Day of the Week Select -->
+                <div class="w-1/5">
+                    <label for="day" class="block text-sm font-medium text-[#111111] mb-2">Day</label>
+                    <div class="flex items-center w-full bg-white rounded-full shadow-lg p-3">
+                        <select id="day" class="outline-none bg-white text-[#111111] flex-1 min-w-0 appearance-none">
+                            <option value="">Select a day</option>
+                            <option value="Monday">Monday</option>
+                            <option value="Tuesday">Tuesday</option>
+                            <option value="Wednesday">Wednesday</option>
+                            <option value="Thursday">Thursday</option>
+                            <option value="Friday">Friday</option>
+                            <option value="Saturday">Saturday</option>
+                            <option value="Sunday">Sunday</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Time Input -->
+                <div class="w-1/5">
+                    <label for="time" class="block text-sm font-medium text-[#111111] mb-2">Time</label>
+                    <div class="flex items-center w-full bg-white rounded-full shadow-lg p-3 cursor-pointer"
+                        @click="openTimePicker">
+                        <input ref="timeInput" type="time" id="time"
+                            class="outline-none bg-white text-[#111111] flex-1 min-w-0 cursor-pointer" />
+                    </div>
+                </div>
+
+                <!-- Filter Button -->
+                <div class="flex items-end">
+                    <button @click="applyFilters"
+                        class="bg-black text-white px-6 py-3 rounded-full transition-all duration-300 hover:border hover:border-black hover:bg-white hover:text-[#111111]">
+                        Filter
+                    </button>
+                </div>
+
+            </div>
+        </div>
+        <div v-if="!store.isLoading && !store.errorMessage" class="grid grid-cols-2 gap-10 mt-20 items-start">
+            <Card v-for="item in store.results" :key="item.docno" :item="item" />
         </div>
 
-        <!-- Error State -->
-        <div v-if="errorMessage" class="flex justify-center items-center mt-20">
-            <p class="text-red-500 text-xl font-bold">{{ errorMessage }}</p>
-        </div>
-
-        <!-- Display Results -->
-        <div v-if="!isLoading && !errorMessage" class="grid grid-cols-2 gap-10 mt-20 items-start">
-            <Card v-for="item in processedResults" :key="item.docno" :item="item" />
-        </div>
     </div>
 </template>
 
 <script lang="ts" setup>
-import { ref, onMounted, computed, watch } from 'vue';
+import { ref } from 'vue';
 import { useSearchStore } from '~/stores/searchStore';
-import { useRouter } from 'vue-router';
+import SearchBar from '~/components/SearchBar.vue';
 
 const store = useSearchStore();
 
+// City input logic
+const cityInput: Ref<string> = ref('');
+const filteredCities: Ref<string[]> = ref([]);
+const showCityOptions: Ref<boolean> = ref(false);
 
-const isLoading = ref<boolean>(true);
-const errorMessage = ref<string | null>(null);
+const cityOptions: string[] = [
+    'New York',
+    'Los Angeles',
+    'Chicago',
+    'Houston',
+    'Miami',
+    'San Francisco',
+    'Atlanta',
+    'Seattle',
+    'Boston',
+    'San Diego'
+];
 
-const processedResults = computed(() => store.results || []);
 
-const fetchResults = async () => {
+function filterCities(): void {
+    const input = cityInput.value.toLowerCase();
+    filteredCities.value = cityOptions.filter(city =>
+        city.toLowerCase().includes(input)
+    );
+}
+
+function selectCity(city: string): void {
+    cityInput.value = city;
+    showCityOptions.value = false;
+}
+
+function hideOptions(): void {
+    setTimeout(() => {
+        showCityOptions.value = false;
+    }, 150);
+}
+
+const timeInput: Ref<HTMLInputElement | null> = ref(null);
+
+function openTimePicker(): void {
+    if (timeInput.value) {
+        timeInput.value.showPicker();
+    }
+}
+
+async function applyFilters(): Promise<void> {
+    const filters = {
+        city: cityInput.value,
+        day: (document.getElementById('day') as HTMLSelectElement)?.value || '',
+        time: timeInput.value?.value || '',
+    };
+
+    console.log('Filters applied with:', filters);
+
     try {
-        const response: any = await $fetch('http://localhost:8000', {
+        store.isLoading = true;
+        store.errorMessage = '';
+        
+        const response = await $fetch('http://localhost:8000', {
             method: 'POST',
-            body: { query: store.searchQuery },
+            body: filters,
         });
 
-        let parsedResponse;
-        try {
-            parsedResponse = typeof response === 'string' ? JSON.parse(response) : response;
-        } catch (err) {
-            console.error('Response parsing error', err);
-            errorMessage.value = 'Server returned an invalid response.';
-            return;
-        }
+        store.results = response as any[];
 
-        if (Array.isArray(parsedResponse) && parsedResponse.length > 0) {
-            store.setResults(parsedResponse); 
-        } else if (Array.isArray(parsedResponse) && parsedResponse.length === 0) {
-            errorMessage.value = "No results found for your search.";
-        }
-        else if (typeof parsedResponse === 'object' && parsedResponse !== null && 'message' in parsedResponse) {
-            errorMessage.value = parsedResponse.message || "No results found for your search.";
-        }
-        else {
-            errorMessage.value = "Unexpected server response.";
-        }
-    } catch (err) {
-        errorMessage.value = `Failed to load results: ${err instanceof Error ? err.message : String(err)}`;
+    } catch (error) {
+        console.error('Error applying filters:', error);
+        store.errorMessage = 'An error occurred while applying filters.';
     } finally {
-        isLoading.value = false;
+        store.isLoading = false;
     }
-
-};
-
-onMounted(() => {
-    fetchResults();
-});
-
-watch(
-    () => store.searchQuery,
-    (newQuery, oldQuery) => {
-        if (newQuery !== oldQuery) {
-            fetchResults();
-        }
-    }
-);
+}
 </script>
