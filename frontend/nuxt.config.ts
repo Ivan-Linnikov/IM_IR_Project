@@ -20,7 +20,6 @@ export default defineNuxtConfig({
   modules: [
     "@nuxtjs/google-fonts", 
     "@pinia/nuxt", 
-    'pinia-plugin-persistedstate/nuxt'
   ],
   css: [
     '/styles/normalize.css',

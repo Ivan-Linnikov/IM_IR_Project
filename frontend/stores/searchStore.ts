@@ -47,6 +47,4 @@ export const useSearchStore = defineStore('searchStore', () => {
         fetchResults 
     };
 }, 
-{
-    persist: true // Correct position for persist option
-});
+);
