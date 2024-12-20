@@ -29,10 +29,6 @@ def indexing_documents(data: pd.DataFrame):
                 print(f"Warning: '{col}' not found in the DataFrame. Filling with 'Missing'.")
                 data[col] = 'Missing'
 
-        # Print available columns
-        print(f"Available columns: {data.columns}")
-
-        # Select the required columns and convert to list of dicts
         documents = data[required_columns].to_dict(orient='records')
 
         indexer.index(documents)

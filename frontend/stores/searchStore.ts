@@ -17,6 +17,7 @@ export const useSearchStore = defineStore('searchStore', () => {
         isLoading.value = true;
         queryErrorMessage.value = null; 
         try {
+            filterErrorMessage.value = null;
             const response: any = await $fetch('http://localhost:8000', {
                 method: 'POST',
                 body: { query: searchQuery.value }, 
