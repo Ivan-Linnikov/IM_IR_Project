@@ -143,7 +143,7 @@ async function applyFilters(): Promise<void> {
         store.isLoading = true;
         store.errorMessage = '';
         
-        const response = await $fetch('http://localhost:8000', {
+        const response = await $fetch('http://localhost:8000/result', {
             method: 'POST',
             body: filters,
         });

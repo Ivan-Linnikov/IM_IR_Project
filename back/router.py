@@ -28,7 +28,7 @@ class FilterModel(BaseModel):
     day: Optional[str] = ''  # Optional, defaults to empty string
     time: Optional[str] = ''  # Optional, defaults to empty string
 
-@router.post("/filter")
+@router.post("/result")
 def filter_results(filter_data: FilterModel):
     """
     This endpoint accepts city, day, and time as input and returns filtered JSON data.
@@ -41,9 +41,9 @@ def filter_results(filter_data: FilterModel):
 
     # Call the filter logic from the filter function
     filter_json_by_location_day_and_time(city, day, time)
-    
+    print(filter_json_by_location_day_and_time(city, day, time))
     # Read the filtered data from the output file
-    with open('filtered_data_ex.json', 'r', encoding='utf-8') as file:
+    with open('filtered_data_exact.json', 'r', encoding='utf-8') as file:
         filtered_results = file.read()
-    
+    print(filtered_results)
     return filtered_results  # Return the filtered results as a JSON response
