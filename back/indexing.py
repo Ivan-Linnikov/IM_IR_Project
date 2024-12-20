@@ -64,7 +64,6 @@ def search_documents(query: str):
     # Save the entire search result to a CSV file
     result.to_csv("firstTry.csv", index=False)
 
-    # Extract the top 20 results
     top_n_results = result
     top_n_docnos = top_n_results["docno"].astype(str).tolist()
 

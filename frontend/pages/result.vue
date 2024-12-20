@@ -72,18 +72,18 @@
 
             </div>
         </div>
-        <div v-if="!store.isLoading && !store.errorMessage" class="grid grid-cols-2 gap-10 mt-20 items-start">
+        <div v-if="!store.isLoading && !store.queryErrorMessage" class="grid grid-cols-2 gap-10 mt-20 items-start">
             <Card v-for="item in store.results" :key="item.docno" :item="item" @mark-relevant="markAsRelevant"
                 @mark-not-relevant="markAsNotRelevant" />
         </div>
-        <div v-if="!store.isLoading && store.errorMessage === 'No results found.'"
+        <div v-if="!store.isLoading && store.filterErrorMessage"
             class="mt-20 text-center text-[#111111]">
             <h2 class="text-2xl font-bold">No results found</h2>
-            <p>Try adjusting your filters or search criteria. </p>
+            <p>Try adjusting your filters. </p>
             <p class="text-gray-500">The search should be within Switzerland.</p>
         </div>
-        <div v-if="!store.isLoading && store.errorMessage" class="mt-20 text-center text-[#111111]">
-            <h2 class="text-2xl font-bold">{{ store.errorMessage }}</h2>
+        <div v-if="!store.isLoading && store.queryErrorMessage" class="mt-20 text-center text-[#111111]">
+            <h2 class="text-2xl font-bold">{{ store.queryErrorMessage }}</h2>
             <p>Try adjusting your search criteria or using different keywords.</p>
         </div>
     </div>
@@ -177,7 +177,7 @@ async function applyFilters(): Promise<void> {
 
     try {
         store.isLoading = true;
-        store.errorMessage = '';
+        store.filterErrorMessage = '';
 
         const response = await $fetch('http://localhost:8000/result', {
             method: 'POST',
@@ -189,20 +189,18 @@ async function applyFilters(): Promise<void> {
 
         // Check if the results are empty
         if (store.results.length === 0) {
-            store.errorMessage = 'No results found.';
+            store.filterErrorMessage = 'No results found.';
         }
 
     } catch (error) {
-        console.error('Error applying filters:', error);
-        store.errorMessage = 'An error occurred while applying filters.';
+        store.filterErrorMessage = 'An error occurred while applying filters.';
     } finally {
         store.isLoading = false;
 
-        // Reset the filter fields
-        cityInput.value = ''; // Clear the city input
-        (document.getElementById('day') as HTMLSelectElement).value = ''; // Clear the day select
+        cityInput.value = ''; 
+        (document.getElementById('day') as HTMLSelectElement).value = ''; 
         if (timeInput.value) {
-            timeInput.value.value = ''; // Clear the time input
+            timeInput.value.value = ''; 
         }
     }
 }
