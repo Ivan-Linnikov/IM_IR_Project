@@ -7,10 +7,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import json
 from webdriver_manager.chrome import ChromeDriverManager
 
-# Set up Chrome options
 chrome_options = Options()
-# Uncomment the next line to run in headless mode
-# chrome_options.add_argument("--headless")  # Headless mode
 chrome_options.add_argument("--disable-gpu")
 
 def safe_find_element(driver, by, value, timeout=5):
@@ -22,14 +19,10 @@ def safe_find_element(driver, by, value, timeout=5):
     except Exception:
         return None
 
-# Start the browser
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
 
-# Target URL
-url = "https://www.herold.at/gelbe-seiten/feldkirch/3x7VW/crimpers-for-your-hair-inh-udo-neyer/"  # Replace with the specific salon page
-driver.get(url)
+url = "https://www.herold.at/gelbe-seiten/feldkirch/3x7VW/crimpers-for-your-hair-inh-udo-neyer/" 
 
-# Handle privacy modal
 try:
     accept_button = WebDriverWait(driver, 10).until(
         EC.element_to_be_clickable((By.XPATH, "//span[@id='cmpbntyestxt' and text()='Alle akzeptieren']"))
@@ -43,7 +36,6 @@ except Exception as e:
 def scrape_page_name(driver):
     """Function to scrape the page name."""
     try:
-        # Scrape the name element
         name_elem = WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.XPATH, "//h1[@class='text-lg font-black md:text-2xl lg:text-3xl']"))
         )
@@ -68,7 +60,6 @@ def scrape_address(driver):
 def scrape_phone_number(driver):
     """Function to scrape the phone number."""
     try:
-        # Look for the phone number by itemprop
         phone_elem = WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.XPATH, "//a[@itemprop='telephone']"))
         )
@@ -78,12 +69,10 @@ def scrape_phone_number(driver):
         print(f"Error: {e}")
         return "N/A"
 
-# Run the scraper functions
 page_name = scrape_page_name(driver)
 address = scrape_address(driver)
 phone_number = scrape_phone_number(driver)
 
-# Save to JSON file
 data = {
     "Page Name": page_name,
     "Address": address,
@@ -95,5 +84,4 @@ with open(output_filename, "w") as json_file:
 
 print(f"Data saved to {output_filename}: {data}")
 
-# Quit the driver
 driver.quit()

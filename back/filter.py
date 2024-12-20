@@ -31,7 +31,7 @@ def filter_json_by_location_day_and_time(location_keyword='', day_of_week='', in
         """
         Checks if the business is open on the specified day of the week.
         """
-        if day == '':  # If day filter is empty, skip it (all entries pass)
+        if day == '':  
             return True
         opening_times = entry.get('Opening Times', {})
         day_status = opening_times.get(day, 'Closed')
@@ -42,17 +42,16 @@ def filter_json_by_location_day_and_time(location_keyword='', day_of_week='', in
         Checks if the business is open at the specified time on the given day.
         If day is empty, it checks for the time across **all days**.
         """
-        if input_time == '':  # If time filter is empty, skip it (all entries pass)
+        if input_time == '':  
             return True
         
         opening_times = entry.get('Opening Times', {})
         
-        if day == '':  # If no specific day is given, check all days in "Opening Times"
+        if day == '': 
             days_to_check = opening_times.keys()
         else:
             days_to_check = [day]
 
-        # Convert input time to datetime for comparison
         input_time_obj = datetime.strptime(input_time, "%H:%M")
         
         for current_day in days_to_check:
@@ -61,7 +60,6 @@ def filter_json_by_location_day_and_time(location_keyword='', day_of_week='', in
             if day_schedule.lower() == 'closed':
                 continue
             
-            # Parse the time ranges for the day (e.g., "8:30 - 12:00 / 13:30 - 18:30")
             time_ranges = [time_range.strip() for time_range in day_schedule.split('/')]
             
             for time_range in time_ranges:
@@ -71,17 +69,15 @@ def filter_json_by_location_day_and_time(location_keyword='', day_of_week='', in
                     end_time_obj = datetime.strptime(end_time, "%H:%M")
                     
                     if start_time_obj <= input_time_obj <= end_time_obj:
-                        return True  # If the input time is within the current range, return True
+                        return True  
                 except ValueError as e:
                     continue
         
         return False
     
-    # Load data from the input file
     with open(input_file_path, 'r', encoding='utf-8') as file:
         data = json.load(file)
     
-    # Filter data based on location, day of the week, and time
     filtered_data = [
         entry for entry in data 
         if (location_keyword == '' or contains_location_keyword(entry, location_keyword)) 
@@ -89,15 +85,6 @@ def filter_json_by_location_day_and_time(location_keyword='', day_of_week='', in
         and (input_time == '' or is_open_at_time(entry, day_of_week, input_time))
     ]
     
-    # Write filtered data to the output file
     with open(output_file_path, 'w', encoding='utf-8') as file:
         json.dump(filtered_data, file, ensure_ascii=False, indent=4)
 
-# Example usage
-# filter_json_by_location_day_and_time('', '', '')  # Filter only by time (works now)
-# filter_json_by_location_day_and_time('Lugano', '', '10:00')  # Filter by location and time
-# filter_json_by_location_day_and_time('', 'Sunday', '22:00')  # Filter by day and time
-# filter_json_by_location_day_and_time('', 'Sunday', '')  # Filter only by day
-# filter_json_by_location_day_and_time('Lugano', '', '')  # Filter only by location
-# filter_json_by_location_day_and_time('Lugano', 'Sunday', '')  # Filter by location and day
-# filter_json_by_location_day_and_time('Lugano', 'Sunday', '10:00')  # Filter by location, day, and time

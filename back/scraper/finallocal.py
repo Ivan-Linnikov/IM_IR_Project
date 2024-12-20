@@ -8,8 +8,7 @@ import json
 import time
 from webdriver_manager.chrome import ChromeDriverManager
 
-# Set the maximum number of pages to scrape
-MAX_PAGE_LIMIT = 60  # You can set this to any number of pages you want to scrape
+MAX_PAGE_LIMIT = 60  
 
 def safe_find_element(driver, by, value, timeout=5):
     """Safely find an element with explicit wait."""
@@ -33,23 +32,18 @@ def scrape_salon_page(driver):
     """Scrapes data from an individual salon page."""
     salon_data = {}
     try:
-        # Name
         name_elem = safe_find_element1(driver, By.XPATH, '//h1[contains(@class, "DetailHeaderRow_title")]')
         salon_data["Name"] = name_elem.text.strip() if name_elem else "N/A"
 
-        # Address
         address_elem = safe_find_element1(driver, By.XPATH, '//a[contains(@class, "DetailMapPreview_addressValue")]')
         salon_data["Address"] = address_elem.text.strip() if address_elem else "N/A"
 
-        # Mobile
         mobile_elem = safe_find_element1(driver, By.XPATH, '//a[starts-with(@href, "tel:")]')
         salon_data["Mobile"] = mobile_elem.text.strip().replace("*", "") if mobile_elem else "N/A"
 
-        # Email
         email_elem = safe_find_element1(driver, By.XPATH, '//a[starts-with(@href, "mailto:")]')
         salon_data["Email"] = email_elem.text.strip() if email_elem else "N/A"
 
-        # Categories
         categories_container = safe_find_element1(driver, By.XPATH, '//dt[contains(text(), "Categories")]/following-sibling::dd')
         if categories_container:
             category_elems = categories_container.find_elements(By.TAG_NAME, "a")
@@ -57,7 +51,6 @@ def scrape_salon_page(driver):
         else:
             salon_data["Categories"] = ["Missing"]
 
-        # Opening Times
         opening_times = {}
         day_blocks = driver.find_elements(By.XPATH, '//li[@data-cy="opening-hours-weekdays"]')
         for block in day_blocks:
@@ -81,7 +74,7 @@ def click_next_button(driver, retries=3):
             if next_button and next_button.is_enabled():
                 print(f"Clicking next button... (Attempt {attempt + 1})")
                 next_button.click()
-                time.sleep(2)  # Allow time for the next page to load
+                time.sleep(2) 
                 return True
         except Exception as e:
             print(f"Attempt {attempt + 1} to click 'Next' button failed: {e}")
@@ -102,17 +95,14 @@ def go_to_previous_page(driver):
         print(f"Failed to navigate to the previous page: {e}")
     return False
 
-# Set up Chrome Options for Headless Mode
 chrome_options = Options()
-chrome_options.add_argument("--headless")  # Run in headless mode
+chrome_options.add_argument("--headless") 
 chrome_options.add_argument("--disable-gpu")
 chrome_options.add_argument("--window-size=1920,1080")
 
-# Main Scraper
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
 driver.get("https://www.local.ch/en/s/Hairdresser?rid=b69308&page=91")
 
-# Handle privacy modal
 try:
     accept_button = safe_find_element(driver, By.XPATH, '//button[text()="I Accept"]')
     if accept_button:
@@ -121,7 +111,6 @@ try:
 except Exception:
     pass
 
-# Data storage
 all_salon_data = []
 page_number = 1
 
@@ -130,7 +119,6 @@ while page_number <= MAX_PAGE_LIMIT:
     try:
         print(f"Scraping page {page_number}...")
 
-        # Re-locate salon links
         salon_links = WebDriverWait(driver, 5).until(
             EC.presence_of_all_elements_located((By.XPATH, '//a[contains(@class, "ListElement_link")]'))
         )
@@ -138,7 +126,6 @@ while page_number <= MAX_PAGE_LIMIT:
 
         print(f"Found {len(salon_urls)} salons on page {page_number}.")
 
-        # Scrape data from each salon
         for idx, url in enumerate(salon_urls, start=1):
             print(f"Opening salon {idx} on page {page_number}...")
             try:
@@ -158,12 +145,11 @@ while page_number <= MAX_PAGE_LIMIT:
                 driver.close()
                 driver.switch_to.window(driver.window_handles[0])
 
-        # Attempt to click the next button
         if not click_next_button(driver):
             print("Failed to click the 'Next' button. Attempting to retry from the previous page...")
-            if go_to_previous_page(driver):  # Navigate to the previous page
+            if go_to_previous_page(driver):  
                 print("Retrying to click the 'Next' button from the previous page...")
-                if not click_next_button(driver):  # Retry clicking next
+                if not click_next_button(driver):  
                     print("Retry failed. Exiting...")
                     break
             else:
@@ -175,12 +161,10 @@ while page_number <= MAX_PAGE_LIMIT:
         print(f"An error occurred on page {page_number}: {e}")
         break
 
-# Close the WebDriver
+
 driver.quit()
 
-# Save data to JSON
 output_filename = "final_all_salon_data_after_91.json"
 with open(output_filename, "w") as json_file:
     json.dump(all_salon_data, json_file, indent=4)
 
-print(f"Data saved to {output_filename}.")

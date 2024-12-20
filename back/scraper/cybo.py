@@ -109,7 +109,6 @@ def scrape_individual_page(driver):
     return salon_data
 
 
-# List of salon URLs to scrape
 SALON_URLS = [
     "https://www.cybo.com/LI-biz/coiffeursalon-darte",
     "https://www.cybo.com/LI-biz/coiffeursalon-m-gaube",
@@ -140,21 +139,18 @@ SALON_URLS = [
     "https://www.cybo.com/LI-biz/coiffeur-emozioni",
 ]
 
-# Loop through each URL
 for idx, url in enumerate(SALON_URLS):
     print(f"\nScraping {idx + 1}/{len(SALON_URLS)}: {url}")
     driver = None
     salon_data = {}
 
     try:
-        # Initialize the WebDriver for each URL
         driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
         driver.maximize_window()
         driver.set_page_load_timeout(30)
 
         driver.get(url)
 
-        # Handle Consent Modal
         try:
             consent_button = safe_find_element(driver, By.XPATH, '//button[contains(@class, "fc-cta-consent")]', 5, EC.element_to_be_clickable)
             if consent_button:
@@ -163,9 +159,8 @@ for idx, url in enumerate(SALON_URLS):
         except Exception as e:
             print("No consent modal detected. Continuing...")
 
-        # Scrape data from the current page
         salon_data = scrape_individual_page(driver)
-        salon_data["URL"] = url  # Add the URL to the salon data
+        salon_data["URL"] = url  
 
     except KeyboardInterrupt:
         print("\n[INFO] User interrupted the script (Ctrl+C). Closing browser tab...")
@@ -179,7 +174,6 @@ for idx, url in enumerate(SALON_URLS):
         salon_data = {"URL": url, "Error": str(e)}
 
     finally:
-        # Close the WebDriver after each URL
         if driver:
             try:
                 driver.quit()
@@ -187,7 +181,6 @@ for idx, url in enumerate(SALON_URLS):
             except Exception as e:
                 print(f"Error closing the driver: {e}")
 
-    # Save the data to a JSON file immediately after each URL
     output_filename = f"salon_{idx + 1}.json"
     try:
         with open(output_filename, "w") as json_file:
@@ -196,11 +189,9 @@ for idx, url in enumerate(SALON_URLS):
     except Exception as e:
         print(f"Error saving file {output_filename}: {e}")
 
-    # Wait for the user to press Enter before continuing to the next URL
     try:
         input("\nPress Enter to continue to the next URL...")
     except KeyboardInterrupt:
         print("\n[INFO] User interrupted during input. Exiting the script.")
         break
 
-print("\nScraping complete.")
