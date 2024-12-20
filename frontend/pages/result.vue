@@ -23,7 +23,8 @@
                     <div class="flex items-center w-full bg-white rounded-full shadow-lg p-3 space-x-2">
                         <input type="text" v-model="cityInput" @input="filterCities" @focus="showCityOptions = true"
                             @blur="hideOptions" id="city" placeholder="Type or select a city"
-                            class="outline-none bg-white text-[#111111] placeholder-[#111111] flex-1 min-w-0" />
+                            class="outline-none focus:outline-none focus:ring-0 focus:bg-transparent bg-white text-[#111111] placeholder-[#111111] flex-1 min-w-0" />
+
                     </div>
                     <ul v-if="showCityOptions && filteredCities.length"
                         class="absolute z-10 bg-white shadow-lg rounded-lg mt-2 max-h-40 overflow-y-auto w-full">
@@ -57,7 +58,7 @@
                     <div class="flex items-center w-full bg-white rounded-full shadow-lg p-3 cursor-pointer"
                         @click="openTimePicker">
                         <input ref="timeInput" type="time" id="time"
-                            class="outline-none bg-white text-[#111111] flex-1 min-w-0 cursor-pointer" />
+                            class="outline-none focus:outline-none focus:ring-0 bg-white text-[#111111] flex-1 min-w-0 cursor-pointer" />
                     </div>
                 </div>
 
@@ -75,7 +76,16 @@
             <Card v-for="item in store.results" :key="item.docno" :item="item" @mark-relevant="markAsRelevant"
                 @mark-not-relevant="markAsNotRelevant" />
         </div>
-
+        <div v-if="!store.isLoading && store.errorMessage === 'No results found.'"
+            class="mt-20 text-center text-[#111111]">
+            <h2 class="text-2xl font-bold">No results found</h2>
+            <p>Try adjusting your filters or search criteria. </p>
+            <p class="text-gray-500">The search should be within Switzerland.</p>
+        </div>
+        <div v-if="!store.isLoading && store.errorMessage" class="mt-20 text-center text-[#111111]">
+            <h2 class="text-2xl font-bold">{{ store.errorMessage }}</h2>
+            <p>Try adjusting your search criteria or using different keywords.</p>
+        </div>
     </div>
 </template>
 
@@ -91,17 +101,42 @@ const cityInput: Ref<string> = ref('');
 const filteredCities: Ref<string[]> = ref([]);
 const showCityOptions: Ref<boolean> = ref(false);
 
-const cityOptions: string[] = [
-    'New York',
-    'Los Angeles',
-    'Chicago',
-    'Houston',
-    'Miami',
-    'San Francisco',
-    'Atlanta',
-    'Seattle',
-    'Boston',
-    'San Diego'
+    const cityOptions: string[] = [
+    'Aadorf', 'Aarau', 'Aarau Rohr', 'Aarburg', 'Aarwangen', 'Abtwil SG', 'Adelboden', 'Adlikon b', 'Adliswil', 
+    'Aegerten', 'Aesch', 'Aesch LU', 'Affoltern am Albis', 'Agno', 'Aigle', 'Algetshausen', 'Alle', 'Allschwil', 
+    'Alpnach Dorf', 'Altbüron', 'Altdorf', 'Altdorf UR', 'Altendorf', 'Altstätten SG', 'Amlikon-Bissegg', 'Amriswil', 
+    'Andeer', 'Anglikon', 'Appenzell', 'Apples', 'Aproz', 'Arbon', 'Arch', 'Arlesheim', 'Arni AG', 'Ascona', 
+    'Attalens', 'Attiswil', 'Au SG', 'Aubonne', 'Auenstein', 'Aumont', 'Auw', 'Avegno', 'Aven', 'Avenches', 
+    'Avry-sur-Matran', 'Avully', 'Azmoos', 'B', 'Baar', 'Bachenbülach', 'Bad Ragaz', 'Bad Zurzach', 'Baden', 
+    'Balerna', 'Balsthal', 'Balzers', 'Bannwil', 'Basel', 'Bassecourt', 'Bassersdorf', 'Bauma', 'Belfaux', 'Bellach', 
+    'Bellinzona', 'Belp', 'Belprahon', 'Benken SG', 'Bercher', 'Berg', 'Berikon', 'Beringen', 'Berlens', 'Bern', 
+    'Berneck', 'Beromünster', 'Bevaix', 'Bex', 'Bi', 'Biasca', 'Biberist', 'Biel', 'Biel Bienne', 'Biel- Bienne', 
+    'Biel-Bienne', 'Bilten', 'Binningen', 'Bioggio', 'Birmensdorf', 'Birmensdorf ZH', 'Birr', 'Birsfelden', 
+    'Bischofszell', 'Blignoud', 'Blonay', 'Blumenstein', 'Boll', 'Bolligen', 'Boncourt', 'Bonfol', 'Bonvillars', 
+    'Bossonnens', 'Boswil', 'Bottighofen', 'Bottmingen', 'Boudry', 'Bouveret', 'Braunau', 'Breganzona', 
+    'Breitenbach', 'Bremgarten AG', 'Brig', 'Brissago', 'Bronschhofen', 'Brugg AG', 'Brunnen', 'Brügg BE', 
+    'Brügglen', 'Brüttisellen', 'Bubendorf', 'Bubikon', 'Buchrain', 'Buchs AG', 'Buchs SG', 'Buchs ZH', 'Bulle', 
+    'Buochs', 'Bure', 'Burgdorf', 'Burgistein', 'Bussigny', 'Buttes', 'Buttikon SZ', 'Buttisholz', 'Buttwil', 
+    'Buus', 'Bäretswil', 'Bäriswil BE', 'Bättwil', 'Bühler', 'Bülach', 'Bürchen', 'Büren an der Aare', 'Büron', 
+    'Bütschwil', 'Büttikon AG', 'Bützberg', 'Cadenazzo', 'Camorino', 'Campascio', 'Carouge GE', 'Castione', 
+    'Celerina', 'Cernier', 'Ch', 'Chailly-Montreux', 'Chalais', 'Cham', 'Champ', 'Chavornay', 'Cheseaux-sur-Lausanne', 
+    'Chesi', 'Chevenez', 'Chexbres', 'Chez-le-Bart', 'Chiasso', 'Chippis', 'Chur', 'Clarens', 'Claro', 'Cointrin', 
+    'Coldrerio', 'Collombey', 'Colombier', 'Conthey', 'Coppet', 'Corcelles-pr', 'Corin-de-la-Cr', 'Corminboeuf', 
+    'Cornaux', 'Corserey', 'Cossonay-Ville', 'Cottens', 'Courgenay', 'Courroux', 'Court', 'Crans-Montana', 'Crissier', 
+    'Cugnasco', 'Cugy', 'Cugy VD', 'Dagmersellen', 'Dallenwil', 'Damphreux', 'Davos Dorf', 'Davos Platz', 
+    'Deitingen', 'Del', 'Derendingen', 'Develier', 'Dielsdorf', 'Diepoldsau', 'Dietikon', 'Dietlikon', 'Disentis', 
+    'Domat', 'Domdidier', 'Dongio', 'Donneloye', 'Dornach', 'Dottikon', 'Duillier', 'Dussnang', 'Däniken', 
+    'Dättwil AG', 'Döttingen', 'Dübendorf', 'Düdingen', 'Dürrenroth', 'Ebikon', 'Ebnat-Kappel', 'Echallens', 
+    'Echichens', 'Ecublens VD', 'Ecuvillens', 'Effretikon', 'Egerkingen', 'Egg b', 'Eglisau', 'Egliswil', 'Egnach', 
+    'Ehrendingen', 'Einsiedeln', 'Elgg', 'Embrach', 'Emmen', 'Emmenbrücke', 'Engelburg', 'Englisberg', 'Ennenda', 
+    'Ennetaach', 'Ennetbaden', 'Ennetbürgen', 'Entlebuch', 'Epalinges', 'Erde', 'Erlach', 'Erlen', 'Erlenbach ZH', 
+    'Erlenbach im Simmental', 'Erlinsbach', 'Erlinsbach SO', 'Ermatingen', 'Ermensee', 'Ersigen', 'Eschen', 
+    'Eschenbach LU', 'Eschenbach SG', 'Eschlikon', 'Escholzmatt', 'Estavayer-le-Lac', 'Ettenhausen', 'Ettingen', 
+    'F', 'Farvagny-le-Grand', 'Fehraltorf', 'Fehren', 'Felben-Wellhausen', 'Felsberg', 'Feuerthalen', 'Fiesch', 
+    'Fislisbach', 'Flawil', 'Fleurier', 'Flims Dorf', 'Flims Waldhaus', 'Flums', 'Flühli LU', 'Fontainemelon', 
+    'Forel', 'Fraubrunnen', 'Frauenfeld', 'Freienbach', 'Freienstein', 'Frenkendorf', 'Fribourg', 'Frick', 'Frutigen', 
+    'Fully', 'Fällanden', 'Füllinsdorf', 'Gais', 'Gampelen', 'Gams', 'Gattikon', 'Gebenstorf', 'Gelterkinden', 
+    'Geneva', 'Genolier', 'Gerlafingen', 'Gerlikon', 'Gerolfingen', 'Giffers', 'Giornico', 'Gipf-Oberfrick', 'Giswil', 
 ];
 
 
@@ -149,26 +184,26 @@ async function applyFilters(): Promise<void> {
             body: filters,
         });
 
-        if (response && Array.isArray(response)) {
-            console.log('API Response:', response); // ✅ Log response for debugging
-            store.results = response.map(item => ({
-                Name: item.Name || 'No Name', // Default values for safety
-                Address: item.Address || 'No Address',
-                Mobile: item.Mobile || 'No Mobile',
-                Email: item.Email || 'No Email',
-                Categories: item.Categories || ['Uncategorized'],
-                'Opening Times': item['Opening Times'] || {},
-                docno: item.docno || `doc-${Math.random()}`, // Ensure docno exists
-            }));
-        } else {
-            console.warn('Unexpected response format:', response);
-            store.results = []; // Clear results to prevent blank cards
+        store.results = response as any[];
+        console.log('Results:', store.results);
+
+        // Check if the results are empty
+        if (store.results.length === 0) {
+            store.errorMessage = 'No results found.';
         }
+
     } catch (error) {
         console.error('Error applying filters:', error);
         store.errorMessage = 'An error occurred while applying filters.';
     } finally {
         store.isLoading = false;
+
+        // Reset the filter fields
+        cityInput.value = ''; // Clear the city input
+        (document.getElementById('day') as HTMLSelectElement).value = ''; // Clear the day select
+        if (timeInput.value) {
+            timeInput.value.value = ''; // Clear the time input
+        }
     }
 }
 

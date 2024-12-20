@@ -1,3 +1,4 @@
+import json
 import os
 from http.client import HTTPException
 
@@ -48,7 +49,8 @@ def filter_results(filter_data: FilterModel):
     filter_json_by_location_day_and_time(city, day, time)
     print(filter_json_by_location_day_and_time(city, day, time))
     # Read the filtered data from the output file
+
     with open('filtered_data_exact.json', 'r', encoding='utf-8') as file:
         filtered_results = file.read()
     print(filtered_results)
-    return filtered_results  # Return the filtered results as a JSON response
+    return json.loads(filtered_results)  # Return the filtered results as a JSON response

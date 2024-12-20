@@ -65,7 +65,7 @@ def search_documents(query: str):
     result.to_csv("firstTry.csv", index=False)
 
     # Extract the top 20 results
-    top_n_results = result.head(20)
+    top_n_results = result
     top_n_docnos = top_n_results["docno"].astype(str).tolist()
 
     # Ensure 'docno' exists in the data
